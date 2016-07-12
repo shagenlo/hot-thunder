@@ -1,0 +1,76 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "title": "Root schema.",
+    "description": "JSON Schema for the Total Wine game Firebase database.",
+    "TotalWine": {
+        "type": "object",
+        "title": "Total Wine Firebase root node.",
+        "description": "Root schema to be found at http://{firebase instance}/.",
+        "properties": {
+            "users": {
+                "allOf": [
+                    {
+                        "$ref": "nodes/user.schema.json"
+                    }
+                ]
+            },
+            "operators": {
+                "allOf": [
+                    {
+                        "$ref": "nodes/operator.schema.json"
+                    }
+                ]
+            },
+            "administrators": {
+                "allOf": [
+                    {
+                        "$ref": "nodes/administrator.schema.json"
+                    }
+                ]
+            },
+            "events": {
+                "allOf": [
+                    {
+                        "$ref": "nodes/event.schema.json"
+                    }
+                ]
+            },
+            "templates": {
+                "allOf": [
+                    {
+                        "$ref": "nodes/template.schema.json"
+                    }
+                ]
+            },
+            "modules": {
+                "allOf": [
+                    {
+                        "$ref": "nodes/module.schema.json"
+                    }
+                ]
+            },
+            "games": {
+                "allOf": [
+                    {
+                        "$ref": "nodes/game.schema.json"
+                    }
+                ]
+            }
+        },
+        "id": "https://totalwine-7d7d5.firebase.com//TotalWine",
+        "required": [
+            "users",
+            "operators",
+            "administrators",
+            "events",
+            "templates",
+            "modules",
+            "games"
+        ]
+    },
+    "id": "https://totalwine-7d7d5.firebase.com/",
+    "required": [
+        "TotalWine"
+    ]
+}

@@ -1,0 +1,39 @@
+{
+    "type": "object",
+    "title": "Modules schema.",
+    "description": "An explanation about the purpose of this instance.",
+    "properties": {
+        "{{firebase_guid}}": {
+            "type": "object",
+            "title": "{{firebase_guid}} schema.",
+            "description": "An explanation about the purpose of this instance.",
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "minLength": 1,
+                    "title": "Name schema.",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "modulename",
+                    "id": "https://totalwine-7d7d5.firebase.com//TotalWine/modules/{{firebase_guid}}/name"
+                },
+                "template": {
+                    "type": "string",
+                    "minLength": 1,
+                    "title": "Template schema.",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "moduletemplate",
+                    "id": "https://totalwine-7d7d5.firebase.com//TotalWine/modules/{{firebase_guid}}/template"
+                }
+            },
+            "id": "https://totalwine-7d7d5.firebase.com//TotalWine/modules/{{firebase_guid}}",
+            "required": [
+                "name",
+                "template"
+            ]
+        }
+    },
+    "id": "https://totalwine-7d7d5.firebase.com//TotalWine/modules",
+    "required": [
+        "{{firebase_guid}}"
+    ]
+}

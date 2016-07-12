@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang='en' ng-app='app'>
+<head>    
+    <meta charset="utf-8">
+    <title>Total Wine Game</title>
+    <!--Google Angular Material Styles and Fonts-->
+    <link rel='stylesheet' href='//ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css'>
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic'>
+    <!--Application Styles-->
+    <link rel='stylesheet' href='content/css/app.css'>
+</head>
+<body>
+    <md-toolbar layout="row">
+        <h1>Game Name</h1>
+    </md-toolbar>
+    <div layout='column'>
+        <div>
+            <h2>Player</h2>
+        </div>
+        <div>
+            <h2>Operator</h2>
+        </div>
+    </div>
+    <!--Third-party JS managed by NPM-->
+    <script src="../node_modules/angular/angular.js"></script>
+    <script src="../node_modules/angular-route/angular-route.js"></script>
+    <script src="../node_modules/angular-animate/angular-animate.js"></script>
+    <script src="../node_modules/angular-aria/angular-aria.js"></script>
+    <script src="../node_modules/angular-material/angular-material.js"></script>
+    <!--script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script-->
+    <!-- BROKEN script src="../node_modules/firebase/lib/firebase-web.js"></script-->
+    <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+    <script src="../node_modules/angularfire/dist/angularfire.js"></script>
+    
+    <!--CDN LOADING-->
+    <!--Angular JS-->
+    <!--
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>    
+    <script src="https://code.angularjs.org/1.4.4/angular-route.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
+    
+    <!--Angular Material-->
+    <!--
+    <script src="//ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
+   
+    <!--Firebase and AngularFire--> 
+    <!--
+    <script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>    
+    <script src="https://cdn.firebase.com/libs/angularfire/1.1.3/angularfire.min.js"></script>
+    
+    <!--Application JS-->
+    <script src="app/firebase.js"></script>
+    <script src='app/app.module.js'></script>
+</body>
+</html>

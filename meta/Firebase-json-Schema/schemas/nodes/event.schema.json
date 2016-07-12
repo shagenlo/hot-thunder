@@ -1,0 +1,83 @@
+{
+    "type": "object",
+    "title": "Events schema.",
+    "description": "An explanation about the purpose of this instance.",
+    "properties": {
+        "{{firebase_guid}}": {
+            "type": "object",
+            "title": "{{firebase_guid}} schema.",
+            "description": "An explanation about the purpose of this instance.",
+            "properties": {
+                "date": {
+                    "type": "string",
+                    "minLength": 1,
+                    "title": "Date schema.",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "date created",
+                    "id": "https://totalwine-7d7d5.firebase.com//TotalWine/events/{{firebase_guid}}/date"
+                },
+                "gameID": {
+                    "type": "string",
+                    "minLength": 1,
+                    "title": "GameID schema.",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "reference to game definition node",
+                    "id": "https://totalwine-7d7d5.firebase.com//TotalWine/events/{{firebase_guid}}/gameID"
+                },
+                "gameState": {
+                    "type": "string",
+                    "minLength": 1,
+                    "title": "GameState schema.",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "reference to node in gameID",
+                    "id": "https://totalwine-7d7d5.firebase.com//TotalWine/events/{{firebase_guid}}/gameState"
+                },
+                "location": {
+                    "type": "string",
+                    "minLength": 1,
+                    "title": "Location schema.",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "physical game location id",
+                    "id": "https://totalwine-7d7d5.firebase.com//TotalWine/events/{{firebase_guid}}/location"
+                },
+                "operator": {
+                    "type": "string",
+                    "minLength": 1,
+                    "title": "Operator schema.",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "guid",
+                    "id": "https://totalwine-7d7d5.firebase.com//TotalWine/events/{{firebase_guid}}/operator"
+                },
+                "pin": {
+                    "type": "string",
+                    "minLength": 1,
+                    "title": "Pin schema.",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "game pin",
+                    "id": "https://totalwine-7d7d5.firebase.com//TotalWine/events/{{firebase_guid}}/pin"
+                },
+                "teams": {
+                    "allOf": [
+                        {
+                            "$ref": "team.schema.json"
+                        }
+                    ]
+                }
+            },
+            "id": "https://totalwine-7d7d5.firebase.com//TotalWine/events/{{firebase_guid}}",
+            "required": [
+                "date",
+                "gameID",
+                "gameState",
+                "location",
+                "operator",
+                "pin",
+                "teams"
+            ]
+        }
+    },
+    "id": "https://totalwine-7d7d5.firebase.com//TotalWine/events",
+    "required": [
+        "{{firebase_guid}}"
+    ]
+}

@@ -1,0 +1,523 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "title": "Root schema.",
+  "description": "An explanation about the purpose of this instance.",
+  "properties": {
+    "TotalWine": {
+      "type": "object",
+      "title": "TotalWine schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "properties": {
+        "users": {
+          "type": "object",
+          "title": "Users schema.",
+          "description": "An explanation about the purpose of this instance.",
+          "properties": {
+            "{{firebase_uid}}": {
+              "type": "object",
+              "title": "{{firebase_uid}} schema.",
+              "description": "An explanation about the purpose of this instance.",
+              "properties": {
+                "address": {
+                  "type": "string",
+                  "minLength": 1,
+                  "title": "Address schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": "813 Justin, Lawrence KS, 66049",
+                  "id": "https://totalwine-7d7d5.firebase.com//TotalWine/users/{{firebase_uid}}/address"
+                },
+                "avatar": {
+                  "type": "string",
+                  "minLength": 1,
+                  "title": "Avatar schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": "svg-21",
+                  "id": "https://totalwine-7d7d5.firebase.com//TotalWine/users/{{firebase_uid}}/avatar"
+                },
+                "email": {
+                  "type": "string",
+                  "minLength": 1,
+                  "title": "Email schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": "shagenlo@sunflower.com",
+                  "id": "https://totalwine-7d7d5.firebase.com//TotalWine/users/{{firebase_uid}}/email"
+                },
+                "firstname": {
+                  "type": "string",
+                  "minLength": 1,
+                  "title": "Firstname schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": "Steve",
+                  "id": "https://totalwine-7d7d5.firebase.com//TotalWine/users/{{firebase_uid}}/firstname"
+                },
+                "lastname": {
+                  "type": "string",
+                  "minLength": 1,
+                  "title": "Lastname schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": "Hagenlock",
+                  "id": "https://totalwine-7d7d5.firebase.com//TotalWine/users/{{firebase_uid}}/lastname"
+                },
+                "nickname": {
+                  "type": "string",
+                  "minLength": 1,
+                  "title": "Nickname schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": "Slippy",
+                  "id": "https://totalwine-7d7d5.firebase.com//TotalWine/users/{{firebase_uid}}/nickname"
+                },
+                "phone": {
+                  "type": "string",
+                  "minLength": 1,
+                  "title": "Phone schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": "785-550-6426",
+                  "id": "https://totalwine-7d7d5.firebase.com//TotalWine/users/{{firebase_uid}}/phone"
+                },
+                "registered": {
+                  "type": "boolean",
+                  "title": "Registered schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": true,
+                  "id": "https://totalwine-7d7d5.firebase.com//TotalWine/users/{{firebase_uid}}/registered"
+                },
+                "team": {
+                  "type": "string",
+                  "minLength": 1,
+                  "title": "Team schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": "",
+                  "id": "https://totalwine-7d7d5.firebase.com//TotalWine/users/{{firebase_uid}}/team"
+                },
+                "uid": {
+                  "type": "string",
+                  "minLength": 1,
+                  "title": "Uid schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": "{{firebase_uid}}",
+                  "id": "https://totalwine-7d7d5.firebase.com//TotalWine/users/{{firebase_uid}}/uid"
+                }
+              },
+              "id": "https://totalwine-7d7d5.firebase.com//TotalWine/users/{{firebase_uid}}",
+              "required": [
+                "address",
+                "avatar",
+                "email",
+                "firstname",
+                "lastname",
+                "nickname",
+                "phone",
+                "registered",
+                "team",
+                "uid"
+              ]
+            }
+          },
+          "id": "https://totalwine-7d7d5.firebase.com//TotalWine/users",
+          "required": [
+            "{{firebase_uid}}"
+          ]
+        },
+        "operators": {
+          "type": "object",
+          "title": "Operators schema.",
+          "description": "An explanation about the purpose of this instance.",
+          "properties": {
+            "{{firebase_uid}}": {
+              "type": "object",
+              "title": "{{firebase_uid}} schema.",
+              "description": "An explanation about the purpose of this instance.",
+              "properties": {
+                "address": {
+                  "type": "string",
+                  "minLength": 1,
+                  "title": "Address schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": "813 Justin, Lawrence KS, 66049",
+                  "id": "https://totalwine-7d7d5.firebase.com//TotalWine/operators/{{firebase_uid}}/address"
+                },
+                "email": {
+                  "type": "string",
+                  "minLength": 1,
+                  "title": "Email schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": "shagenlo1@sunflower.com",
+                  "id": "https://totalwine-7d7d5.firebase.com//TotalWine/operators/{{firebase_uid}}/email"
+                },
+                "firstname": {
+                  "type": "string",
+                  "minLength": 1,
+                  "title": "Firstname schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": "Steve",
+                  "id": "https://totalwine-7d7d5.firebase.com//TotalWine/operators/{{firebase_uid}}/firstname"
+                },
+                "lastname": {
+                  "type": "string",
+                  "minLength": 1,
+                  "title": "Lastname schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": "Hagenlock",
+                  "id": "https://totalwine-7d7d5.firebase.com//TotalWine/operators/{{firebase_uid}}/lastname"
+                },
+                "phone": {
+                  "type": "string",
+                  "minLength": 1,
+                  "title": "Phone schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": "785-550-6426",
+                  "id": "https://totalwine-7d7d5.firebase.com//TotalWine/operators/{{firebase_uid}}/phone"
+                },
+                "uid": {
+                  "type": "string",
+                  "minLength": 1,
+                  "title": "Uid schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": "{{firebase_uid}}",
+                  "id": "https://totalwine-7d7d5.firebase.com//TotalWine/operators/{{firebase_uid}}/uid"
+                }
+              },
+              "id": "https://totalwine-7d7d5.firebase.com//TotalWine/operators/{{firebase_uid}}",
+              "required": [
+                "address",
+                "email",
+                "firstname",
+                "lastname",
+                "phone",
+                "uid"
+              ]
+            }
+          },
+          "id": "https://totalwine-7d7d5.firebase.com//TotalWine/operators",
+          "required": [
+            "{{firebase_uid}}"
+          ]
+        },
+        "administrators": {
+          "type": "object",
+          "title": "Administrators schema.",
+          "description": "An explanation about the purpose of this instance.",
+          "properties": {
+            "{{firebase_uid}}": {
+              "type": "object",
+              "title": "{{firebase_uid}} schema.",
+              "description": "An explanation about the purpose of this instance.",
+              "properties": {
+                "address": {
+                  "type": "string",
+                  "minLength": 1,
+                  "title": "Address schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": "813 Justin, Lawrence KS, 66049",
+                  "id": "https://totalwine-7d7d5.firebase.com//TotalWine/administrators/{{firebase_uid}}/address"
+                },
+                "email": {
+                  "type": "string",
+                  "minLength": 1,
+                  "title": "Email schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": "shagenlo1@sunflower.com",
+                  "id": "https://totalwine-7d7d5.firebase.com//TotalWine/administrators/{{firebase_uid}}/email"
+                },
+                "firstname": {
+                  "type": "string",
+                  "minLength": 1,
+                  "title": "Firstname schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": "Steve",
+                  "id": "https://totalwine-7d7d5.firebase.com//TotalWine/administrators/{{firebase_uid}}/firstname"
+                },
+                "lastname": {
+                  "type": "string",
+                  "minLength": 1,
+                  "title": "Lastname schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": "Hagenlock",
+                  "id": "https://totalwine-7d7d5.firebase.com//TotalWine/administrators/{{firebase_uid}}/lastname"
+                },
+                "phone": {
+                  "type": "string",
+                  "minLength": 1,
+                  "title": "Phone schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": "785-550-6426",
+                  "id": "https://totalwine-7d7d5.firebase.com//TotalWine/administrators/{{firebase_uid}}/phone"
+                },
+                "uid": {
+                  "type": "string",
+                  "minLength": 1,
+                  "title": "Uid schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": "{{firebase_uid}}",
+                  "id": "https://totalwine-7d7d5.firebase.com//TotalWine/administrators/{{firebase_uid}}/uid"
+                }
+              },
+              "id": "https://totalwine-7d7d5.firebase.com//TotalWine/administrators/{{firebase_uid}}",
+              "required": [
+                "address",
+                "email",
+                "firstname",
+                "lastname",
+                "phone",
+                "uid"
+              ]
+            }
+          },
+          "id": "https://totalwine-7d7d5.firebase.com//TotalWine/administrators",
+          "required": [
+            "{{firebase_uid}}"
+          ]
+        },
+        "events": {
+          "type": "object",
+          "title": "Events schema.",
+          "description": "An explanation about the purpose of this instance.",
+          "properties": {
+            "{{firebase_guid}}": {
+              "type": "object",
+              "title": "{{firebase_guid}} schema.",
+              "description": "An explanation about the purpose of this instance.",
+              "properties": {
+                "date": {
+                  "type": "string",
+                  "minLength": 1,
+                  "title": "Date schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": "date created",
+                  "id": "https://totalwine-7d7d5.firebase.com//TotalWine/events/{{firebase_guid}}/date"
+                },
+                "gameID": {
+                  "type": "string",
+                  "minLength": 1,
+                  "title": "GameID schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": "reference to game definition node",
+                  "id": "https://totalwine-7d7d5.firebase.com//TotalWine/events/{{firebase_guid}}/gameID"
+                },
+                "gameState": {
+                  "type": "string",
+                  "minLength": 1,
+                  "title": "GameState schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": "reference to node in gameID",
+                  "id": "https://totalwine-7d7d5.firebase.com//TotalWine/events/{{firebase_guid}}/gameState"
+                },
+                "location": {
+                  "type": "string",
+                  "minLength": 1,
+                  "title": "Location schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": "physical game location id",
+                  "id": "https://totalwine-7d7d5.firebase.com//TotalWine/events/{{firebase_guid}}/location"
+                },
+                "operator": {
+                  "type": "string",
+                  "minLength": 1,
+                  "title": "Operator schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": "guid",
+                  "id": "https://totalwine-7d7d5.firebase.com//TotalWine/events/{{firebase_guid}}/operator"
+                },
+                "pin": {
+                  "type": "string",
+                  "minLength": 1,
+                  "title": "Pin schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": "game pin",
+                  "id": "https://totalwine-7d7d5.firebase.com//TotalWine/events/{{firebase_guid}}/pin"
+                },
+                "teams": {
+                  "type": "object",
+                  "title": "Teams schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "properties": {
+                    "{{firebase_guid}}": {
+                      "type": "object",
+                      "title": "{{firebase_guid}} schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "properties": {
+                        "players": {
+                          "type": "object",
+                          "title": "Players schema.",
+                          "description": "An explanation about the purpose of this instance.",
+                          "properties": {
+                            "{{firebase_uid}}": {
+                              "type": "string",
+                              "minLength": 1,
+                              "title": "{{firebase_uid}} schema.",
+                              "description": "An explanation about the purpose of this instance.",
+                              "default": "player score",
+                              "id": "https://totalwine-7d7d5.firebase.com//TotalWine/events/{{firebase_guid}}/teams/{{firebase_guid}}/players/{{firebase_uid}}"
+                            }
+                          },
+                          "id": "https://totalwine-7d7d5.firebase.com//TotalWine/events/{{firebase_guid}}/teams/{{firebase_guid}}/players",
+                          "required": [
+                            "{{firebase_uid}}"
+                          ]
+                        },
+                        "teamname": {
+                          "type": "string",
+                          "minLength": 1,
+                          "title": "Teamname schema.",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": "NameOfTeam",
+                          "id": "https://totalwine-7d7d5.firebase.com//TotalWine/events/{{firebase_guid}}/teams/{{firebase_guid}}/teamname"
+                        },
+                        "teamscore": {
+                          "type": "string",
+                          "minLength": 1,
+                          "title": "Teamscore schema.",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": "score of team",
+                          "id": "https://totalwine-7d7d5.firebase.com//TotalWine/events/{{firebase_guid}}/teams/{{firebase_guid}}/teamscore"
+                        }
+                      },
+                      "id": "https://totalwine-7d7d5.firebase.com//TotalWine/events/{{firebase_guid}}/teams/{{firebase_guid}}",
+                      "required": [
+                        "players",
+                        "teamname",
+                        "teamscore"
+                      ]
+                    }
+                  },
+                  "id": "https://totalwine-7d7d5.firebase.com//TotalWine/events/{{firebase_guid}}/teams",
+                  "required": [
+                    "{{firebase_guid}}"
+                  ]
+                }
+              },
+              "id": "https://totalwine-7d7d5.firebase.com//TotalWine/events/{{firebase_guid}}",
+              "required": [
+                "date",
+                "gameID",
+                "gameState",
+                "location",
+                "operator",
+                "pin",
+                "teams"
+              ]
+            }
+          },
+          "id": "https://totalwine-7d7d5.firebase.com//TotalWine/events",
+          "required": [
+            "{{firebase_guid}}"
+          ]
+        },
+        "templates": {
+          "type": "object",
+          "title": "Templates schema.",
+          "description": "An explanation about the purpose of this instance.",
+          "properties": {
+            "{{firebase_guid}}": {
+              "type": "object",
+              "title": "{{firebase_guid}} schema.",
+              "description": "An explanation about the purpose of this instance.",
+              "properties": {
+                "templatestuff": {
+                  "type": "string",
+                  "minLength": 1,
+                  "title": "Templatestuff schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": "templatestuff",
+                  "id": "https://totalwine-7d7d5.firebase.com//TotalWine/templates/{{firebase_guid}}/templatestuff"
+                }
+              },
+              "id": "https://totalwine-7d7d5.firebase.com//TotalWine/templates/{{firebase_guid}}",
+              "required": [
+                "templatestuff"
+              ]
+            }
+          },
+          "id": "https://totalwine-7d7d5.firebase.com//TotalWine/templates",
+          "required": [
+            "{{firebase_guid}}"
+          ]
+        },
+        "modules": {
+          "type": "object",
+          "title": "Modules schema.",
+          "description": "An explanation about the purpose of this instance.",
+          "properties": {
+            "{{firebase_guid}}": {
+              "type": "object",
+              "title": "{{firebase_guid}} schema.",
+              "description": "An explanation about the purpose of this instance.",
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "minLength": 1,
+                  "title": "Name schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": "modulename",
+                  "id": "https://totalwine-7d7d5.firebase.com//TotalWine/modules/{{firebase_guid}}/name"
+                },
+                "template": {
+                  "type": "string",
+                  "minLength": 1,
+                  "title": "Template schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": "moduletemplate",
+                  "id": "https://totalwine-7d7d5.firebase.com//TotalWine/modules/{{firebase_guid}}/template"
+                }
+              },
+              "id": "https://totalwine-7d7d5.firebase.com//TotalWine/modules/{{firebase_guid}}",
+              "required": [
+                "name",
+                "template"
+              ]
+            }
+          },
+          "id": "https://totalwine-7d7d5.firebase.com//TotalWine/modules",
+          "required": [
+            "{{firebase_guid}}"
+          ]
+        },
+        "games": {
+          "type": "object",
+          "title": "Games schema.",
+          "description": "An explanation about the purpose of this instance.",
+          "properties": {
+            "{{firebase_guid}}": {
+              "type": "object",
+              "title": "{{firebase_guid}} schema.",
+              "description": "An explanation about the purpose of this instance.",
+              "properties": {
+                "moduleID": {
+                  "type": "string",
+                  "minLength": 1,
+                  "title": "ModuleID schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": "index",
+                  "id": "https://totalwine-7d7d5.firebase.com//TotalWine/games/{{firebase_guid}}/moduleID"
+                }
+              },
+              "id": "https://totalwine-7d7d5.firebase.com//TotalWine/games/{{firebase_guid}}",
+              "required": [
+                "moduleID"
+              ]
+            }
+          },
+          "id": "https://totalwine-7d7d5.firebase.com//TotalWine/games",
+          "required": [
+            "{{firebase_guid}}"
+          ]
+        }
+      },
+      "id": "https://totalwine-7d7d5.firebase.com//TotalWine",
+      "required": [
+        "users",
+        "operators",
+        "administrators",
+        "events",
+        "templates",
+        "modules",
+        "games"
+      ]
+    }
+  },
+  "id": "https://totalwine-7d7d5.firebase.com/",
+  "required": [
+    "TotalWine"
+  ]
+}

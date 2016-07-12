@@ -1,0 +1,30 @@
+{
+    "type": "object",
+    "title": "Templates schema.",
+    "description": "An explanation about the purpose of this instance.",
+    "properties": {
+        "{{firebase_guid}}": {
+            "type": "object",
+            "title": "{{firebase_guid}} schema.",
+            "description": "An explanation about the purpose of this instance.",
+            "properties": {
+                "templatestuff": {
+                    "type": "string",
+                    "minLength": 1,
+                    "title": "Templatestuff schema.",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "templatestuff",
+                    "id": "https://totalwine-7d7d5.firebase.com//TotalWine/templates/{{firebase_guid}}/templatestuff"
+                }
+            },
+            "id": "https://totalwine-7d7d5.firebase.com//TotalWine/templates/{{firebase_guid}}",
+            "required": [
+                "templatestuff"
+            ]
+        }
+    },
+    "id": "https://totalwine-7d7d5.firebase.com//TotalWine/templates",
+    "required": [
+        "{{firebase_guid}}"
+    ]
+}

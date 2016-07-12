@@ -1,0 +1,30 @@
+<md-content layout-fill layout-padding ng-cloak>
+    <div>
+        <div class="pageHeader">
+            <h2>Join Game!</h2>
+        </div>
+    </div>  
+    <br>
+    <div layout="column" layout-align="center center" >
+        <md-input-container>
+            <form name='joinform'
+              ng-submit='joinform.$valid && vm.joinGame()'
+              novalidate
+              class='joinpin'>
+                <label>Enter Game Pin</label>
+                <input autofocus name="pin" ng-model="vm.pin" type="text" placeholder=""
+                       ng-required="true" maxlength="6" minlength="6" style="font-size:25px;  text-align: center;"
+                       aria-label="Enter game pin" ng-pattern="/^$|^\d{6}$/"> 
+                 <!-- Name Error-->
+                <div ng-messages="joinform.pin.$error" role="alert">
+                    <div ng-message-exp="['required', 'maxlength', 'minlength', 'pattern']" class="md-warn">The Game Pin must be 6 numeric characters</div>
+                </div>
+            </form> 
+        </md-input-container>
+        <!--SUBMIT-->
+        <md-button id='submit-button' 
+                   class="md-raised md-primary form-workflow-button" 
+                   type='submit' 
+                   aria-label='Join Game'>Join Game!</md-button> 
+    </div>
+</md-content>

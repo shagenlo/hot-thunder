@@ -1,0 +1,61 @@
+<md-content flex layout-fill layout-padding>
+    
+    <div>
+        <div class="pageHeader">
+            <h2 ng-bind='vm.formTitle'></h2>
+        </div>
+        <div class="pageCounter">
+            <h4>(2 of 2)</h4>
+        </div>
+    </div>      
+    <form name='playerAviForm'
+          ng-submit="playerAviForm.$valid && vm.createPlayerAvatar()"
+          novalidate
+          class='form-player'>
+      
+        <div layout="column">
+          <md-content class="md-no-momentum" ng-cloak>
+
+            <md-input-container class="md-icon-float md-block" >
+                <!--USE class="selectedavatarsmall" FOR CIRCULAR
+                    AVATAR, NOTE PROBLEMS WITH FIREFOX THOUGH-->
+                <md-icon id="selectedAvatar" md-svg-icon="{{vm.newPlayer.avatar != '' ? vm.newPlayer.avatar : 'unknown'}}" ></md-icon>
+                <input ng-model="vm.newPlayer.nickname" name="nickname" 
+                       type="text" placeholder="Nickname" ng-required="true" 
+                       ng-model-options="{updateOn:'default blur', debounce:{'default':1000, 'blur':0}}" autofocus>
+                 <!-- Nickname Error-->
+                <div ng-messages="playerAviForm.nickname.$error" ng-show='playerAviForm.$submitted' role="alert">
+                    <div ng-message="required" class="md-warn">Nickname Required</div>
+                </div>
+            </md-input-container>
+              
+            <h4>Choose an Avatar</h4>
+            <md-content class="avatarchooser" ng-cloak>
+                <md-grid-list md-cols="4" md-row-height="1:1" md-gutter="0px">
+                    <md-grid-tile ng-repeat="item in vm.avatars">
+                        <div>
+                            <md-button id={{item}} class="md-fab avatarbttn" ng-click="vm.selectAvatar(item)" aria-label="Avatar Image">
+                                <md-icon md-svg-icon="{{item}}" class="avatar"></md-icon>
+                            </md-button>
+                        </div>
+                    </md-grid-tile>
+                </md-grid-list>          
+            </md-content>
+              
+            <md-input-container style="padding:0; margin:0;">
+                <!--HIDDEN FIELD ONLY TO HOLD AVATAR NAME AND PROVIDE A HOOK FOR NG-MESSAGES -->
+                <!--INPUT CONTAINER TO ALLOW THEME COLORS TO WORK FOR NG-MESSAGE-->
+                <input type="hidden" name="avatar" ng-model="vm.newPlayer.avatar" ng-required="true">                
+                <!--AVATAR ERROR-->
+                <div ng-messages="playerAviForm.avatar.$error" ng-show='playerAviForm.$submitted' role="alert">
+                    <div ng-message="required" class="md-warn">Please choose an Avatar</div>
+                </div> 
+            </md-input-container>
+              
+            <br><br>
+            <md-button id='submit-button' class="md-raised md-primary form-workflow-button" ng-bind='vm.buttonTitle' type='submit' aria-label='{{vm.ariaLabel}}'></md-button>
+              
+          </md-content>
+        </div>
+    </form>
+</md-content>

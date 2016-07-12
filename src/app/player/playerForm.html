@@ -1,0 +1,71 @@
+<md-content flex layout-fill layout-padding>
+    <div>
+        <div class="pageHeader">
+            <h2 ng-bind='vm.formTitle'></h2>
+        </div>
+        <div class="pageCounter">
+            <h4>(1 of 2)</h4>
+        </div>
+    </div>    
+    <form name='playerForm'
+          ng-submit='playerForm.$valid && vm.createPlayer()'
+          novalidate
+          class='form-player'
+          ng-cloak>
+        
+        <div ng-cloak> <!--layout="column" layout-padding -->
+
+          <md-content class="md-no-momentum">
+            <div layout="row"> <!--PLACE FIRST AND LASTNAME SIDE BY SIDE-->
+                <!--FIRST NAME-->  
+                <md-input-container class="md-icon-float md-block">
+                    <md-icon class="mdi mdi-account" style="font-size:26px;"></md-icon>
+                    <input autofocus name="name" ng-model="vm.newPlayer.firstname" type="text" placeholder="First name" ng-required="true">
+                     <!-- Name Error-->
+                    <div ng-messages="playerForm.name.$error" role="alert">
+                        <div ng-message="required" class="md-warn">First Name Required</div>
+                    </div>              
+                </md-input-container>
+
+                <!--LAST NAME-->
+                <md-input-container class="md-icon-float md-block">
+                    <input Name="name" ng-model="vm.newPlayer.lastname" type="text" placeholder="Last name" ng-required="true">
+                     <!-- Name Error-->
+                    <div ng-messages="playerForm.name.$error" role="alert">
+                        <div ng-message="required" class="md-warn">Last Name Required</div>
+                    </div>
+                </md-input-container>
+            </div>
+              
+            <!--EMAIL--> 
+            <md-input-container class="md-block">
+                <md-icon class="mdi mdi-email" style="font-size:26px;"></md-icon>
+                <!--<md-icon md-svg-icon="email"></md-icon>-->
+                <input name="email" ng-model="vm.newPlayer.email" type="email" placeholder="Email (required)" ng-required="true">
+                 <!-- Email Error-->
+                <div ng-messages="playerForm.email.$error" role="alert">
+                    <div ng-message="required" class="md-warn">Email Required</div>
+                </div>
+            </md-input-container>
+              
+             <!--PHONE--> 
+            <md-input-container class="md-block">
+                <md-icon class="mdi mdi-phone-classic" style="font-size:26px;"></md-icon>
+                <!--<md-icon md-svg-icon="phone" ></md-icon>-->
+                <input name="phone" ng-model="vm.newPlayer.phone" placeholder="Phone Number" type='tel'>
+            </md-input-container>
+                            
+            <!--ADDRESS-->  
+            <md-input-container class="md-block">
+                <md-icon class="mdi mdi-home-map-marker" style="font-size:26px;"></md-icon>
+                <!--<md-icon md-svg-icon="place"></md-icon>-->
+                <input name="address" ng-model="vm.newPlayer.address" type="text" placeholder="Address" >
+            </md-input-container>         
+            
+            <!--SUBMIT-->
+            <md-button id='submit-button' class="md-raised md-primary form-workflow-button" ng-bind='vm.buttonTitle' type='submit' aria-label='{{vm.ariaLabel}}'></md-button>
+              
+          </md-content>
+        </div>
+    </form>
+</md-content>

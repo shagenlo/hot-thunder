@@ -1,0 +1,35 @@
+include templates/mixins/indexFolders
+
+doctype html
+head
+  include templates/includes/css
+html
+  body.index
+    article
+      header
+        h1 Total Wine Game Project - Firebase JSON Schema Definitions
+
+        p
+          | This is the Firebase database schema definition document for the Total Wine
+          | Game project.
+        p
+          | The Firebase project can be found here:
+          a(href='https://console.firebase.google.com/project/totalwine-7d7d5/database/data') console.firebase.google.com
+        
+
+      section
+        h2 Documentation
+
+        ul
+          each file, name in files
+            if typeof file === 'string'
+              li
+                a(href=name)= name
+
+        each folder, name in files
+          if typeof folder === 'object'
+            h2= name
+            ul
+              mixin indexFolders(folder, 3)
+
+      include templates/includes/footer

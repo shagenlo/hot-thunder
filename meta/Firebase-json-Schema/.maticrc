@@ -1,0 +1,17 @@
+{
+    "assets": [
+        "js",
+        "css"
+    ],
+    "folders": true,
+    "index": {
+        "schemas": true
+    },
+    "templates": {
+        "folder": true,
+        "path": "templates",
+        "file": "default",
+        "lib": "jade",
+        "suffix": "jade"
+    }
+}

@@ -1,0 +1,44 @@
+    <md-toolbar >
+        <div class="md-toolbar-tools">
+            <h1><a href="#/">Game</a></h1>           
+            <span flex></span>
+            
+<!--
+            <ul class='navbar-auth'>
+                <li><a href="#/login" ng-hide="vm.isLoggedIn()">Log in</a></li>
+                <li><a href="" ng-click="vm.logout()" ng-show="vm.isLoggedIn()" class="md-warn">Log out</a></li>
+            </ul>
+-->
+            <!--<a href="#/player">
+                <md-icon class="mdi mdi-menu" style="font-size:26px;" ng-show="vm.isLoggedIn()"></md-icon>   
+            </a>-->
+            
+            <md-menu ng-show="vm.isLoggedIn()">
+              <md-button aria-label="Open app menu" class="md-icon-button" ng-click="vm.openMenu($mdOpenMenu, $event)">
+                <md-icon md-menu-origin class="mdi mdi-menu navbar-menu-bttn" ></md-icon>
+              </md-button>
+              <md-menu-content width="4">
+                <md-menu-item>
+                    <md-button ng-click="vm.navigate('/player')">
+                        <md-icon class="mdi mdi-account"></md-icon>
+                        My account
+                    </md-button>
+                </md-menu-item> 
+                <md-menu-item>
+                  <md-button ng-disabled="!vm.playerIsRegistered" ng-click="vm.navigate('/join')">
+                        <md-icon class="mdi mdi-gamepad-variant"></md-icon>
+                        Join game
+                  </md-button>
+                </md-menu-item>                  
+                <md-menu-divider></md-menu-divider>
+                <md-menu-item>
+                  <md-button ng-click="vm.logout()" class="md-warn">
+                        <md-icon class="mdi mdi-logout" md-menu-align-target></md-icon>
+                        Log out
+                  </md-button>
+                </md-menu-item>                  
+              </md-menu-content>
+            </md-menu>            
+            
+        </div>
+    </md-toolbar>

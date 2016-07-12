@@ -1,0 +1,102 @@
+html, body, .ng-scope {
+    height: 100%;
+}
+
+.text-danger {
+  font-size: .8em;
+  color: #dd2c00;
+}
+
+.navbar-auth {
+    list-style-type: none;
+    text-decoration: underline;
+    font-size: small;
+}
+
+.navbar-menu-bttn {
+    font-size:26px;    
+}
+
+.form-signin {
+    max-width: 330px;
+    margin: 0 auto;
+}
+
+.form-player {
+    max-width: 370px;
+    margin: 0 auto;
+}
+
+.form-workflow-button {
+    float: right;
+}
+
+.pageHeader {
+    display:inline-block;
+    line-height: 1px;
+}
+
+.pageCounter {
+    display:inline-block; float:right;
+    line-height: 1px;
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;    
+}
+
+.selectedavatarsmall {
+   margin-top: 0;
+   margin-left: 0px;
+   margin-right: 0;
+   margin-bottom: 0;
+   vertical-align: top; 
+   padding: 0 0 0 0;
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   overflow: hidden;
+   zoom:0.70;
+   transform: translateZ(0);
+   -webkit-transform: scale(0.70);
+   -moz-transform:scale(0.50);
+}
+
+.selectedavatarlarge {
+   margin-top: 0;
+   margin-left: 20px;
+   margin-right: 0;
+   margin-bottom: 0;
+   vertical-align: top;
+   padding: 0 0px 0 0px; 
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   overflow: hidden;
+   zoom:0.70;
+   transform: translateZ(0);
+   -webkit-transform: scale(0.70);
+   -moz-transform:scale(0.70);
+}
+
+.avatarbttn {
+    padding: 0 0px 0 0px;
+    
+}
+
+.avatarchooser {
+    max-height: 165px;
+    border: 1px solid gray;
+}
+
+.joinpin input[type="text"] {
+  padding: 10px;
+  border: solid 1px #dcdcdc;
+  transition: box-shadow 0.3s, border 0.3s;
+}
+.joinpin input[type="text"]:focus,
+.joinpin input[type="text"].focus {
+  border: solid 1px #707070;
+  box-shadow: 0 0 5px 1px #969696;
+}

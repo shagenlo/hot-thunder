@@ -1,0 +1,75 @@
+{
+    "type": "object",
+    "title": "Operators schema.",
+    "description": "An Operator is a type of user which can provide the operator function in the game flow.",
+    "properties": {
+        "{{firebase_uid}}": {
+            "type": "object",
+            "title": "{{firebase_uid}} schema.",
+            "description": "The 'firebase_uid' key is a duplicate of the UID assigned when the persons entry in the Firebase authentication system is performed.  In this manner, we can perform fast lookups on the /operators node using the persons official Firebase Auth UID.  A Firebase UID looks like this: 6O6qCG5TBFZgnefCEjI8tKkNTkG2",
+            "properties": {
+                "address": {
+                    "type": "string",
+                    "minLength": 1,
+                    "title": "Address schema.",
+                    "description": "This is an address field.  It will probably be removed in the final project, as the information is not required for the project.",
+                    "default": "Enter an address",
+                    "id": "https://totalwine-7d7d5.firebase.com//TotalWine/operators/{{firebase_uid}}/address"
+                },
+                "email": {
+                    "type": "string",
+                    "minLength": 1,
+                    "title": "Email schema.",
+                    "description": "The user's email address, defaults to the email address used in the sign-up process, but can be modified on the person's detail screen.",
+                    "default": "email@address.com",
+                    "id": "https://totalwine-7d7d5.firebase.com//TotalWine/operators/{{firebase_uid}}/email"
+                },
+                "firstname": {
+                    "type": "string",
+                    "minLength": 1,
+                    "title": "Firstname schema.",
+                    "description": "First Name",
+                    "default": "Firstname",
+                    "id": "https://totalwine-7d7d5.firebase.com//TotalWine/operators/{{firebase_uid}}/firstname"
+                },
+                "lastname": {
+                    "type": "string",
+                    "minLength": 1,
+                    "title": "Lastname schema.",
+                    "description": "Last Name",
+                    "default": "Lastname",
+                    "id": "https://totalwine-7d7d5.firebase.com//TotalWine/operators/{{firebase_uid}}/lastname"
+                },
+                "phone": {
+                    "type": "string",
+                    "minLength": 1,
+                    "title": "Phone schema.",
+                    "description": "Phone Number",
+                    "default": "555-555-5555",
+                    "id": "https://totalwine-7d7d5.firebase.com//TotalWine/operators/{{firebase_uid}}/phone"
+                },
+                "uid": {
+                    "type": "string",
+                    "minLength": 1,
+                    "title": "Uid schema.",
+                    "description": "This is a record-based duplicate of the 'firebase_uid' that is also used for the record key of this node.  It may be removed in the final product if it is determined that the key is to remain a 'firebase_uid' Auth key rather than a Firebase auto-generated GUID",
+                    "default": "{{firebase_uid}}",
+                    "id": "https://totalwine-7d7d5.firebase.com//TotalWine/operators/{{firebase_uid}}/uid"
+                }
+            },
+            "id": "https://totalwine-7d7d5.firebase.com//TotalWine/operators/{{firebase_uid}}",
+            "required": [
+                "address",
+                "email",
+                "firstname",
+                "lastname",
+                "phone",
+                "uid"
+            ]
+        }
+    },
+    "id": "https://totalwine-7d7d5.firebase.com//TotalWine/operators",
+    "required": [
+        "{{firebase_uid}}"
+    ]
+}

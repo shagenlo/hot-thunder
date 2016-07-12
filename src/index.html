@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang='en' >
+<head>    
+    <meta charset="utf-8">
+    <meta name="author" content="Steve Hagenlock">
+    <meta name="viewport" content="width=device-width, 
+                initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Total Wine Game</title>
+    <!--Google Angular Material Styles and Fonts-->
+    <link rel='stylesheet' href='../node_modules/angular-material/angular-material.css'>
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic'>
+    <link rel="stylesheet" href="../node_modules/mdi/css/materialdesignicons.css" media="all"  type="text/css" />
+    <!--Application Styles-->
+    <link rel='stylesheet' href='content/css/app.css'>
+</head>
+<body ng-app='app' ng-strict-di="true" md-theme="docs-dark" bgcolor="#303030">
+    <!--Headline Toolbar-->
+    <sh-navbar></sh-navbar>
+    
+    <!--Main content that changes based on route-->
+    <div class='container' ng-view></div>
+    
+    <!--Third-party JS managed by NPM-->
+    <!--Angular JS-->
+    <script src="../node_modules/angular/angular.js"></script>
+    <script src="../node_modules/angular-route/angular-route.js"></script>
+    <script src="../node_modules/angular-animate/angular-animate.js"></script>
+    <script src="../node_modules/angular-aria/angular-aria.js"></script>
+    <script src="../node_modules/angular-messages/angular-messages.js"></script>
+    <!--Angular Material-->
+    <script src="../node_modules/angular-material/angular-material.js"></script>
+    <!--Firebase and AngularFire--> 
+    <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+    <script src="../node_modules/angularfire/dist/angularfire.js"></script>
+    <!--other-->
+    <!--<script src="../node_modules/ng-focus-if/focusIf.min.js"></script>-->
+    <!--<script src="app/utils/autofocus.directive.js"></script>-->
+    
+    <!--Application JS-->
+    <script src='app/app.module.js'></script>
+    <script src="app/core/core.module.js"></script>
+    <script src="app/core/constants.js"></script>
+    <script src="app/core/config.firebase.js"></script>
+    <script src="app/core/firebaseData.service.js"></script>
+    
+    
+    <!--Auth Form JS-->
+    <script src="app/auth/auth.module.js"></script>
+    <script src="app/auth/auth.service.js"></script>
+    <script src="app/auth/auth.controller.js"></script>
+    <script src="app/auth/authForm.directive.js"></script>
+    <script src="app/auth/config.route.js"></script>    
+    <!--Layout module-->
+    <script src="app/layout/layout.module.js"></script>
+    <script src="app/layout/navbar.directive.js"></script>
+    <!--Landing module-->
+    <script src="app/landing/landing.module.js"></script>
+    <script src="app/landing/config.route.js"></script>
+    <!--Player module-->
+    <script src="app/player/player.module.js"></script>
+    <script src="app/core/player.service.js"></script>
+    <script src="app/player/config.route.js"></script>
+    <script src="app/player/player.controller.js"></script>
+    <script src="app/player/player.directive.js"></script>
+    <script src="app/player/playerAvi.directive.js"></script>
+    <!--Game module-->
+    <script src="app/game/join.module.js"></script>
+    <script src="app/game/config.route.js"></script>
+    <script src="app/game/join.controller.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+{
+    "totalwine": {
+        "games": {
+            "firebase_guid": {
+                "date": "date created",
+                "gameID": "reference to game definition node",
+                "gameState": "reference to node in gameID",
+                "location": "physical game location id",
+                "operator": "guid",
+                "pin": "game pin",
+                "teams": {
+                    "firebase_guid": {
+                        "players": {
+                            "firebase_uid": "player score"
+                        },
+                        "teamname": "NameOfTeam",
+                        "teamscore": "score of team"
+                    }
+                }
+            }
+        },
+        "operators": {
+            "firebase_uid": {
+                "address": "813 Justin, Lawrence KS, 66049",
+                "email": "shagenlo1@sunflower.com",
+                "firstname": "Steve",
+                "lastname": "Hagenlock",
+                "phone": "785-550-6426",
+                "uid": "6O6qCG5TBFZgnefCEjI8tKkNTkG2"
+            }
+        },
+        "users": {
+            "firebase_uid": {
+                "address": "813 Justin, Lawrence KS, 66049",
+                "avatar": "svg-21",
+                "email": "shagenlo@sunflower.com",
+                "firstname": "Steve",
+                "lastname": "Hagenlock",
+                "nickname": "Slippy",
+                "phone": "785-550-6426",
+                "registered": true,
+                "team": "",
+                "uid": "cpucJa9ANdOt7RRnHQMnPFTuJ2J3"
+            }
+        }
+    }
+}

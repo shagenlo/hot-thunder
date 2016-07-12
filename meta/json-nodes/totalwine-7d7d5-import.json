@@ -1,0 +1,107 @@
+{
+    "events": {
+        "firebase_guid": {
+            "date": "date created",
+            "gameID": "reference to game definition node",
+            "gameState": "reference to node in gameID",
+            "location": "physical game location id",
+            "operator": "guid",
+            "pin": "game pin",
+            "teams": {
+                "firebase_guid": {
+                    "players": {
+                        "firebase_uid": "player score"
+                    },
+                    "teamname": "NameOfTeam",
+                    "teamscore": "score of team"
+                }
+            }
+        }
+    },
+    "administrators": {
+        "firebase_uid": {
+            "address": "813 Justin, Lawrence KS, 66049",
+            "email": "shagenlo1@sunflower.com",
+            "firstname": "Steve",
+            "lastname": "Hagenlock",
+            "phone": "785-550-6426",
+            "uid": "firebase_uid"
+        }
+    },
+    "operators": {
+        "firebase_uid": {
+            "address": "813 Justin, Lawrence KS, 66049",
+            "email": "shagenlo1@sunflower.com",
+            "firstname": "Steve",
+            "lastname": "Hagenlock",
+            "phone": "785-550-6426",
+            "uid": "firebase_uid"
+        }
+    },
+    "users": {
+        "6O6qCG5TBFZgnefCEjI8tKkNTkG2": {
+            "address": "813 Justin, Lawrence KS, 66049",
+            "avatar": "svg-32",
+            "email": "shagenlo1@sunflower.com",
+            "firstname": "Steve",
+            "lastname": "Hagenlock",
+            "nickname": "shaggy",
+            "phone": "785-550-6426",
+            "registered": true,
+            "team": "",
+            "uid": "6O6qCG5TBFZgnefCEjI8tKkNTkG2"
+        },
+        "HuHfRQamISfOUoX767mxuY3xt943": {
+            "address": "813 Justin, Lawrence KS, 66049",
+            "avatar": "svg-7",
+            "email": "shagenlo2@sunflower.com",
+            "firstname": "Steve",
+            "lastname": "Hagenlock",
+            "nickname": "Sally",
+            "phone": "785-550-6426",
+            "registered": true,
+            "team": "",
+            "uid": "HuHfRQamISfOUoX767mxuY3xt943"
+        },
+        "L7MxQrZDgvZ6UDb06jdDhBRDPaQ2": {
+            "address": "813 Justin, Lawrence KS, 66049",
+            "avatar": "svg-19",
+            "email": "shagenlo3@sunflower.com",
+            "firstname": "Steve",
+            "lastname": "Hagenlock",
+            "nickname": "slappy",
+            "phone": "785-550-6426",
+            "registered": true,
+            "team": "",
+            "uid": "L7MxQrZDgvZ6UDb06jdDhBRDPaQ2"
+        },
+        "cpucJa9ANdOt7RRnHQMnPFTuJ2J3": {
+            "address": "813 Justin, Lawrence KS, 66049",
+            "avatar": "svg-21",
+            "email": "shagenlo@sunflower.com",
+            "firstname": "Steve",
+            "lastname": "Hagenlock",
+            "nickname": "Slippy",
+            "phone": "785-550-6426",
+            "registered": true,
+            "team": "",
+            "uid": "cpucJa9ANdOt7RRnHQMnPFTuJ2J3"
+        }
+    },
+    "modules": {
+        "firebase_guid": {
+            "name": "modulename",
+            "template": "moduletemplate"
+        }
+    },
+    "games": {
+        "firebase_guid": {
+            "moduleID": "index"
+        }
+    },
+    "templates": {
+        "firebase_guid": {
+            "templatestuff": "templatestuff"
+        }
+    }
+}

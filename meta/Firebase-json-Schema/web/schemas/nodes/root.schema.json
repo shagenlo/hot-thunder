@@ -1,0 +1,144 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "title": "Root schema.",
+  "description": "An explanation about the purpose of this instance.",
+  "properties": {
+    "events": {
+      "type": "object",
+      "title": "Events schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "properties": {
+        "firebasekey": {
+          "type": "object",
+          "title": "Firebasekey schema.",
+          "description": "An explanation about the purpose of this instance.",
+          "properties": {},
+          "id": "https://totalwine-7d7d5.firebase.com/events/firebasekey"
+        }
+      },
+      "id": "https://totalwine-7d7d5.firebase.com/events",
+      "required": [
+        "firebasekey"
+      ]
+    },
+    "operators": {
+      "type": "object",
+      "title": "Operators schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "properties": {
+        "firebaseUID": {
+          "type": "object",
+          "title": "FirebaseUID schema.",
+          "description": "An explanation about the purpose of this instance.",
+          "properties": {},
+          "id": "https://totalwine-7d7d5.firebase.com/operators/firebaseUID"
+        }
+      },
+      "id": "https://totalwine-7d7d5.firebase.com/operators",
+      "required": [
+        "firebaseUID"
+      ]
+    },
+    "administrators": {
+      "type": "object",
+      "title": "Administrators schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "properties": {
+        "firebaseUID": {
+          "type": "object",
+          "title": "FirebaseUID schema.",
+          "description": "An explanation about the purpose of this instance.",
+          "properties": {},
+          "id": "https://totalwine-7d7d5.firebase.com/administrators/firebaseUID"
+        }
+      },
+      "id": "https://totalwine-7d7d5.firebase.com/administrators",
+      "required": [
+        "firebaseUID"
+      ]
+    },
+    "users": {
+      "type": "object",
+      "title": "Users schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "properties": {
+        "firebaseUID": {
+          "type": "object",
+          "title": "FirebaseUID schema.",
+          "description": "An explanation about the purpose of this instance.",
+          "properties": {},
+          "id": "https://totalwine-7d7d5.firebase.com/users/firebaseUID"
+        }
+      },
+      "id": "https://totalwine-7d7d5.firebase.com/users",
+      "required": [
+        "firebaseUID"
+      ]
+    },
+    "modules": {
+      "type": "object",
+      "title": "Modules schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "properties": {
+        "firebaseKey": {
+          "type": "object",
+          "title": "FirebaseKey schema.",
+          "description": "An explanation about the purpose of this instance.",
+          "properties": {},
+          "id": "https://totalwine-7d7d5.firebase.com/modules/firebaseKey"
+        }
+      },
+      "id": "https://totalwine-7d7d5.firebase.com/modules",
+      "required": [
+        "firebaseKey"
+      ]
+    },
+    "games": {
+      "type": "object",
+      "title": "Games schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "properties": {
+        "firebaseKey": {
+          "type": "object",
+          "title": "FirebaseKey schema.",
+          "description": "An explanation about the purpose of this instance.",
+          "properties": {},
+          "id": "https://totalwine-7d7d5.firebase.com/games/firebaseKey"
+        }
+      },
+      "id": "https://totalwine-7d7d5.firebase.com/games",
+      "required": [
+        "firebaseKey"
+      ]
+    },
+    "templates": {
+      "type": "object",
+      "title": "Templates schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "properties": {
+        "firebaseKey": {
+          "type": "object",
+          "title": "FirebaseKey schema.",
+          "description": "An explanation about the purpose of this instance.",
+          "properties": {},
+          "id": "https://totalwine-7d7d5.firebase.com/templates/firebaseKey"
+        }
+      },
+      "id": "https://totalwine-7d7d5.firebase.com/templates",
+      "required": [
+        "firebaseKey"
+      ]
+    }
+  },
+  "id": "https://totalwine-7d7d5.firebase.com",
+  "required": [
+    "events",
+    "operators",
+    "administrators",
+    "users",
+    "modules",
+    "games",
+    "templates"
+  ]
+}
