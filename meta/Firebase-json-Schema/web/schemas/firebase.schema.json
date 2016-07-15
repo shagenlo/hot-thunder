@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
-  "title": "Root schema.",
+  "title": "Hot-Thunder Firebase Root Schema Explorer.",
   "description": "JSON Schema for the Total Wine game Firebase database.",
   "TotalWine": {
     "type": "object",
@@ -13,7 +13,7 @@
           {
             "type": "object",
             "title": "Users schema.",
-            "description": "A 'user' is a type of user that is a player in the game.  In this system, it is the least priviledged type of user.",
+            "description": "A 'user' represents an authenticarted user in the system.  They can be a player, operator or administrator.",
             "properties": {
               "{{firebase_uid}}": {
                 "type": "object",
@@ -26,7 +26,7 @@
                     "title": "Address schema.",
                     "description": "This is an address field.  It will probably be removed in the final project, as the information is not required for the project.",
                     "default": "Enter an address",
-                    "id": "https://totalwine-7d7d5.firebase.com//TotalWine/users/{{firebase_uid}}/address"
+                    "id": "https://totalwine-7d7d5.firebase.com/TotalWine/users/{{firebase_uid}}/address"
                   },
                   "avatar": {
                     "type": "string",
@@ -34,7 +34,7 @@
                     "title": "Avatar schema.",
                     "description": "An SVG image ID, for lookup in the file: /src/content/img/icons/avatars.svg",
                     "default": "svg-1",
-                    "id": "https://totalwine-7d7d5.firebase.com//TotalWine/users/{{firebase_uid}}/avatar"
+                    "id": "https://totalwine-7d7d5.firebase.com/TotalWine/users/{{firebase_uid}}/avatar"
                   },
                   "email": {
                     "type": "string",
@@ -42,7 +42,7 @@
                     "title": "Email schema.",
                     "description": "The user's email address, defaults to the email address used in the sign-up process, but can be modified on the person's detail screen",
                     "default": "email@address.com",
-                    "id": "https://totalwine-7d7d5.firebase.com//TotalWine/users/{{firebase_uid}}/email"
+                    "id": "https://totalwine-7d7d5.firebase.com/TotalWine/users/{{firebase_uid}}/email"
                   },
                   "firstname": {
                     "type": "string",
@@ -50,7 +50,7 @@
                     "title": "Firstname schema.",
                     "description": "First Name.",
                     "default": "Firstname",
-                    "id": "https://totalwine-7d7d5.firebase.com//TotalWine/users/{{firebase_uid}}/firstname"
+                    "id": "https://totalwine-7d7d5.firebase.com/TotalWine/users/{{firebase_uid}}/firstname"
                   },
                   "lastname": {
                     "type": "string",
@@ -58,7 +58,7 @@
                     "title": "Lastname schema.",
                     "description": "Last Name",
                     "default": "Lastname",
-                    "id": "https://totalwine-7d7d5.firebase.com//TotalWine/users/{{firebase_uid}}/lastname"
+                    "id": "https://totalwine-7d7d5.firebase.com/TotalWine/users/{{firebase_uid}}/lastname"
                   },
                   "nickname": {
                     "type": "string",
@@ -66,7 +66,7 @@
                     "title": "Nickname schema.",
                     "description": "A single word nickname for in-game usage",
                     "default": "Nickname",
-                    "id": "https://totalwine-7d7d5.firebase.com//TotalWine/users/{{firebase_uid}}/nickname"
+                    "id": "https://totalwine-7d7d5.firebase.com/TotalWine/users/{{firebase_uid}}/nickname"
                   },
                   "phone": {
                     "type": "string",
@@ -74,14 +74,14 @@
                     "title": "Phone schema.",
                     "description": "Phone Number - not required",
                     "default": "555-555-5555",
-                    "id": "https://totalwine-7d7d5.firebase.com//TotalWine/users/{{firebase_uid}}/phone"
+                    "id": "https://totalwine-7d7d5.firebase.com/TotalWine/users/{{firebase_uid}}/phone"
                   },
                   "registered": {
                     "type": "boolean",
                     "title": "Registered schema.",
                     "description": "A boolean value, indicating whether the user has completed the full registration process for all of the required datapoints.  This node is not set until all data collection screens have been completed.  If querying for resolve, ensure that /registered = true, rather than the presence of the 'regisgtered' key.",
                     "default": true,
-                    "id": "https://totalwine-7d7d5.firebase.com//TotalWine/users/{{firebase_uid}}/registered"
+                    "id": "https://totalwine-7d7d5.firebase.com/TotalWine/users/{{firebase_uid}}/registered"
                   },
                   "team": {
                     "type": "string",
@@ -89,7 +89,7 @@
                     "title": "Team schema.",
                     "description": "This is a GUID reference to the team defined in the /event/teams/team node (TODO: final location to be determined)",
                     "default": "",
-                    "id": "https://totalwine-7d7d5.firebase.com//TotalWine/users/{{firebase_uid}}/team"
+                    "id": "https://totalwine-7d7d5.firebase.com/TotalWine/users/{{firebase_uid}}/team"
                   },
                   "uid": {
                     "type": "string",
@@ -97,10 +97,44 @@
                     "title": "UID schema.",
                     "description": "This is a record-based duplicate of the 'firebase_uid' that is also used for the record key of this node.  It may be removed in the final product if it is determined that the key is to remain a 'firebase_uid' Auth key rather than a Firebase auto-generated GUID",
                     "default": "{{firebase_uid}}",
-                    "id": "https://totalwine-7d7d5.firebase.com//TotalWine/users/{{firebase_uid}}/uid"
+                    "id": "https://totalwine-7d7d5.firebase.com/TotalWine/users/{{firebase_uid}}/uid"
+                  },
+                  "roles": {
+                    "oneOf": [
+                      {
+                        "type": "object",
+                        "title": "Roles schema.",
+                        "description": "A collection of possible user roles.  A user must contain at least one of these.",
+                        "properties": {
+                          "administrator": {
+                            "type": "boolean",
+                            "title": "Administrator schema.",
+                            "description": "Administrator Role Designator.",
+                            "default": true,
+                            "id": "https://totalwine-7d7d5.firebase.com/TotalWine/users/{{firebase_uid}}/roles/administrator"
+                          },
+                          "operator": {
+                            "type": "boolean",
+                            "title": "Operator schema.",
+                            "description": "Operator Role Designator.",
+                            "default": true,
+                            "id": "https://totalwine-7d7d5.firebase.com/TotalWine/users/{{firebase_uid}}/roles/operator"
+                          },
+                          "player": {
+                            "type": "boolean",
+                            "title": "Player schema.",
+                            "description": "Player Role Designator.",
+                            "default": true,
+                            "id": "https://totalwine-7d7d5.firebase.com/TotalWine/users/{{firebase_uid}}/roles/player"
+                          }
+                        },
+                        "id": "https://totalwine-7d7d5.firebase.com/TotalWine/users/{{firebase_uid}}/roles",
+                        "required": []
+                      }
+                    ]
                   }
                 },
-                "id": "https://totalwine-7d7d5.firebase.com//TotalWine/users/{{firebase_uid}}",
+                "id": "https://totalwine-7d7d5.firebase.com/TotalWine/users/{{firebase_uid}}",
                 "required": [
                   "avatar",
                   "email",
@@ -109,169 +143,12 @@
                   "nickname",
                   "registered",
                   "team",
-                  "uid"
+                  "uid",
+                  "roles"
                 ]
               }
             },
-            "id": "https://totalwine-7d7d5.firebase.com//TotalWine/users",
-            "required": [
-              "{{firebase_uid}}"
-            ]
-          }
-        ]
-      },
-      "operators": {
-        "allOf": [
-          {
-            "type": "object",
-            "title": "Operators schema.",
-            "description": "An Operator is a type of user which can provide the operator function in the game flow.",
-            "properties": {
-              "{{firebase_uid}}": {
-                "type": "object",
-                "title": "{{firebase_uid}} schema.",
-                "description": "The 'firebase_uid' key is a duplicate of the UID assigned when the persons entry in the Firebase authentication system is performed.  In this manner, we can perform fast lookups on the /operators node using the persons official Firebase Auth UID.  A Firebase UID looks like this: 6O6qCG5TBFZgnefCEjI8tKkNTkG2",
-                "properties": {
-                  "address": {
-                    "type": "string",
-                    "minLength": 1,
-                    "title": "Address schema.",
-                    "description": "This is an address field.  It will probably be removed in the final project, as the information is not required for the project.",
-                    "default": "Enter an address",
-                    "id": "https://totalwine-7d7d5.firebase.com//TotalWine/operators/{{firebase_uid}}/address"
-                  },
-                  "email": {
-                    "type": "string",
-                    "minLength": 1,
-                    "title": "Email schema.",
-                    "description": "The user's email address, defaults to the email address used in the sign-up process, but can be modified on the person's detail screen.",
-                    "default": "email@address.com",
-                    "id": "https://totalwine-7d7d5.firebase.com//TotalWine/operators/{{firebase_uid}}/email"
-                  },
-                  "firstname": {
-                    "type": "string",
-                    "minLength": 1,
-                    "title": "Firstname schema.",
-                    "description": "First Name",
-                    "default": "Firstname",
-                    "id": "https://totalwine-7d7d5.firebase.com//TotalWine/operators/{{firebase_uid}}/firstname"
-                  },
-                  "lastname": {
-                    "type": "string",
-                    "minLength": 1,
-                    "title": "Lastname schema.",
-                    "description": "Last Name",
-                    "default": "Lastname",
-                    "id": "https://totalwine-7d7d5.firebase.com//TotalWine/operators/{{firebase_uid}}/lastname"
-                  },
-                  "phone": {
-                    "type": "string",
-                    "minLength": 1,
-                    "title": "Phone schema.",
-                    "description": "Phone Number",
-                    "default": "555-555-5555",
-                    "id": "https://totalwine-7d7d5.firebase.com//TotalWine/operators/{{firebase_uid}}/phone"
-                  },
-                  "uid": {
-                    "type": "string",
-                    "minLength": 1,
-                    "title": "Uid schema.",
-                    "description": "This is a record-based duplicate of the 'firebase_uid' that is also used for the record key of this node.  It may be removed in the final product if it is determined that the key is to remain a 'firebase_uid' Auth key rather than a Firebase auto-generated GUID",
-                    "default": "{{firebase_uid}}",
-                    "id": "https://totalwine-7d7d5.firebase.com//TotalWine/operators/{{firebase_uid}}/uid"
-                  }
-                },
-                "id": "https://totalwine-7d7d5.firebase.com//TotalWine/operators/{{firebase_uid}}",
-                "required": [
-                  "address",
-                  "email",
-                  "firstname",
-                  "lastname",
-                  "phone",
-                  "uid"
-                ]
-              }
-            },
-            "id": "https://totalwine-7d7d5.firebase.com//TotalWine/operators",
-            "required": [
-              "{{firebase_uid}}"
-            ]
-          }
-        ]
-      },
-      "administrators": {
-        "allOf": [
-          {
-            "type": "object",
-            "title": "Administrators schema.",
-            "description": "An Administrator is a type of user capable of logging into the firebase console.  This type of user can only be created by hand in the Firebase console.  The user type exists to provide a user class which can operate backups, perform user CRM, etc...",
-            "properties": {
-              "{{firebase_uid}}": {
-                "type": "object",
-                "title": "{{firebase_uid}} schema.",
-                "description": "The 'firebase_uid' key is a duplicate of the UID assigned when the persons entry in the Firebase authentication system is performed.  In this manner, we can perform fast lookups on the /administrators node using the persons official Firebase Auth UID.  A Firebase UID looks like this: 6O6qCG5TBFZgnefCEjI8tKkNTkG2",
-                "properties": {
-                  "address": {
-                    "type": "string",
-                    "minLength": 1,
-                    "title": "Address schema.",
-                    "description": "This is an address field.  It will probably be removed in the final project, as the information is not required for the project.",
-                    "default": "Enter an address",
-                    "id": "https://totalwine-7d7d5.firebase.com//TotalWine/operators/{{firebase_uid}}/address"
-                  },
-                  "email": {
-                    "type": "string",
-                    "minLength": 1,
-                    "title": "Email schema.",
-                    "description": "The user's email address, defaults to the email address used in the sign-up process, but can be modified on the person's detail screen.",
-                    "default": "email@address.com",
-                    "id": "https://totalwine-7d7d5.firebase.com//TotalWine/operators/{{firebase_uid}}/email"
-                  },
-                  "firstname": {
-                    "type": "string",
-                    "minLength": 1,
-                    "title": "Firstname schema.",
-                    "description": "First Name",
-                    "default": "Firstname",
-                    "id": "https://totalwine-7d7d5.firebase.com//TotalWine/operators/{{firebase_uid}}/firstname"
-                  },
-                  "lastname": {
-                    "type": "string",
-                    "minLength": 1,
-                    "title": "Lastname schema.",
-                    "description": "Last Name",
-                    "default": "Lastname",
-                    "id": "https://totalwine-7d7d5.firebase.com//TotalWine/operators/{{firebase_uid}}/lastname"
-                  },
-                  "phone": {
-                    "type": "string",
-                    "minLength": 1,
-                    "title": "Phone schema.",
-                    "description": "Phone Number",
-                    "default": "555-555-5555",
-                    "id": "https://totalwine-7d7d5.firebase.com//TotalWine/operators/{{firebase_uid}}/phone"
-                  },
-                  "uid": {
-                    "type": "string",
-                    "minLength": 1,
-                    "title": "Uid schema.",
-                    "description": "This is a record-based duplicate of the 'firebase_uid' that is also used for the record key of this node.  It may be removed in the final product if it is determined that the key is to remain a 'firebase_uid' Auth key rather than a Firebase auto-generated GUID",
-                    "default": "{{firebase_uid}}",
-                    "id": "https://totalwine-7d7d5.firebase.com//TotalWine/operators/{{firebase_uid}}/uid"
-                  }
-                },
-                "id": "https://totalwine-7d7d5.firebase.com//TotalWine/administrators/{{firebase_uid}}",
-                "required": [
-                  "address",
-                  "email",
-                  "firstname",
-                  "lastname",
-                  "phone",
-                  "uid"
-                ]
-              }
-            },
-            "id": "https://totalwine-7d7d5.firebase.com//TotalWine/administrators",
+            "id": "https://totalwine-7d7d5.firebase.com/TotalWine/users",
             "required": [
               "{{firebase_uid}}"
             ]

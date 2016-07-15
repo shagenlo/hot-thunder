@@ -1,7 +1,7 @@
 {
     "type": "object",
     "title": "Users schema.",
-    "description": "A 'user' is a type of user that is a player in the game.  In this system, it is the least priviledged type of user.",
+    "description": "A 'user' represents an authenticarted user in the system.  They can be a player, operator or administrator.",
     "properties": {
         "{{firebase_uid}}": {
             "type": "object",
@@ -14,7 +14,7 @@
                     "title": "Address schema.",
                     "description": "This is an address field.  It will probably be removed in the final project, as the information is not required for the project.",
                     "default": "Enter an address",
-                    "id": "https://totalwine-7d7d5.firebase.com//TotalWine/users/{{firebase_uid}}/address"
+                    "id": "https://totalwine-7d7d5.firebase.com/TotalWine/users/{{firebase_uid}}/address"
                 },
                 "avatar": {
                     "type": "string",
@@ -22,7 +22,7 @@
                     "title": "Avatar schema.",
                     "description": "An SVG image ID, for lookup in the file: /src/content/img/icons/avatars.svg",
                     "default": "svg-1",
-                    "id": "https://totalwine-7d7d5.firebase.com//TotalWine/users/{{firebase_uid}}/avatar"
+                    "id": "https://totalwine-7d7d5.firebase.com/TotalWine/users/{{firebase_uid}}/avatar"
                 },
                 "email": {
                     "type": "string",
@@ -30,7 +30,7 @@
                     "title": "Email schema.",
                     "description": "The user's email address, defaults to the email address used in the sign-up process, but can be modified on the person's detail screen",
                     "default": "email@address.com",
-                    "id": "https://totalwine-7d7d5.firebase.com//TotalWine/users/{{firebase_uid}}/email"
+                    "id": "https://totalwine-7d7d5.firebase.com/TotalWine/users/{{firebase_uid}}/email"
                 },
                 "firstname": {
                     "type": "string",
@@ -38,7 +38,7 @@
                     "title": "Firstname schema.",
                     "description": "First Name.",
                     "default": "Firstname",
-                    "id": "https://totalwine-7d7d5.firebase.com//TotalWine/users/{{firebase_uid}}/firstname"
+                    "id": "https://totalwine-7d7d5.firebase.com/TotalWine/users/{{firebase_uid}}/firstname"
                 },
                 "lastname": {
                     "type": "string",
@@ -46,7 +46,7 @@
                     "title": "Lastname schema.",
                     "description": "Last Name",
                     "default": "Lastname",
-                    "id": "https://totalwine-7d7d5.firebase.com//TotalWine/users/{{firebase_uid}}/lastname"
+                    "id": "https://totalwine-7d7d5.firebase.com/TotalWine/users/{{firebase_uid}}/lastname"
                 },
                 "nickname": {
                     "type": "string",
@@ -54,7 +54,7 @@
                     "title": "Nickname schema.",
                     "description": "A single word nickname for in-game usage",
                     "default": "Nickname",
-                    "id": "https://totalwine-7d7d5.firebase.com//TotalWine/users/{{firebase_uid}}/nickname"
+                    "id": "https://totalwine-7d7d5.firebase.com/TotalWine/users/{{firebase_uid}}/nickname"
                 },
                 "phone": {
                     "type": "string",
@@ -62,14 +62,14 @@
                     "title": "Phone schema.",
                     "description": "Phone Number - not required",
                     "default": "555-555-5555",
-                    "id": "https://totalwine-7d7d5.firebase.com//TotalWine/users/{{firebase_uid}}/phone"
+                    "id": "https://totalwine-7d7d5.firebase.com/TotalWine/users/{{firebase_uid}}/phone"
                 },
                 "registered": {
                     "type": "boolean",
                     "title": "Registered schema.",
                     "description": "A boolean value, indicating whether the user has completed the full registration process for all of the required datapoints.  This node is not set until all data collection screens have been completed.  If querying for resolve, ensure that /registered = true, rather than the presence of the 'regisgtered' key.",
                     "default": true,
-                    "id": "https://totalwine-7d7d5.firebase.com//TotalWine/users/{{firebase_uid}}/registered"
+                    "id": "https://totalwine-7d7d5.firebase.com/TotalWine/users/{{firebase_uid}}/registered"
                 },
                 "team": {
                     "type": "string",
@@ -77,7 +77,7 @@
                     "title": "Team schema.",
                     "description": "This is a GUID reference to the team defined in the /event/teams/team node (TODO: final location to be determined)",
                     "default": "",
-                    "id": "https://totalwine-7d7d5.firebase.com//TotalWine/users/{{firebase_uid}}/team"
+                    "id": "https://totalwine-7d7d5.firebase.com/TotalWine/users/{{firebase_uid}}/team"
                 },
                 "uid": {
                     "type": "string",
@@ -85,10 +85,17 @@
                     "title": "UID schema.",
                     "description": "This is a record-based duplicate of the 'firebase_uid' that is also used for the record key of this node.  It may be removed in the final product if it is determined that the key is to remain a 'firebase_uid' Auth key rather than a Firebase auto-generated GUID",
                     "default": "{{firebase_uid}}",
-                    "id": "https://totalwine-7d7d5.firebase.com//TotalWine/users/{{firebase_uid}}/uid"
+                    "id": "https://totalwine-7d7d5.firebase.com/TotalWine/users/{{firebase_uid}}/uid"
+                },
+                "roles": {
+                    "oneOf": [
+                        {
+                            "$ref": "roles.schema.json"
+                        }
+                    ]
                 }
             },
-            "id": "https://totalwine-7d7d5.firebase.com//TotalWine/users/{{firebase_uid}}",
+            "id": "https://totalwine-7d7d5.firebase.com/TotalWine/users/{{firebase_uid}}",
             "required": [
                 "avatar",
                 "email",
@@ -97,11 +104,12 @@
                 "nickname",
                 "registered",
                 "team",
-                "uid"
+                "uid",
+                "roles"
             ]
         }
     },
-    "id": "https://totalwine-7d7d5.firebase.com//TotalWine/users",
+    "id": "https://totalwine-7d7d5.firebase.com/TotalWine/users",
     "required": [
         "{{firebase_uid}}"
     ]

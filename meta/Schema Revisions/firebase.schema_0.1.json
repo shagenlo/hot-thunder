@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "type": "object",
-    "title": "Hot-Thunder Firebase Root Schema Explorer.",
+    "title": "Root schema.",
     "description": "JSON Schema for the Total Wine game Firebase database.",
     "TotalWine": {
         "type": "object",
@@ -12,6 +12,20 @@
                 "allOf": [
                     {
                         "$ref": "nodes/user.schema.json"
+                    }
+                ]
+            },
+            "operators": {
+                "allOf": [
+                    {
+                        "$ref": "nodes/operator.schema.json"
+                    }
+                ]
+            },
+            "administrators": {
+                "allOf": [
+                    {
+                        "$ref": "nodes/administrator.schema.json"
                     }
                 ]
             },

@@ -1,0 +1,30 @@
+{
+    "type": "object",
+    "title": "Roles schema.",
+    "description": "A collection of possible user roles.  A user must contain at least one of these.",
+    "properties": {
+        "administrator": {
+            "type": "boolean",
+            "title": "Administrator schema.",
+            "description": "Administrator Role Designator.",
+            "default": true,
+            "id": "https://totalwine-7d7d5.firebase.com/TotalWine/users/{{firebase_uid}}/roles/administrator"
+        },
+        "operator": {
+            "type": "boolean",
+            "title": "Operator schema.",
+            "description": "Operator Role Designator.",
+            "default": true,
+            "id": "https://totalwine-7d7d5.firebase.com/TotalWine/users/{{firebase_uid}}/roles/operator"
+        },
+        "player": {
+            "type": "boolean",
+            "title": "Player schema.",
+            "description": "Player Role Designator.",
+            "default": true,
+            "id": "https://totalwine-7d7d5.firebase.com/TotalWine/users/{{firebase_uid}}/roles/player"
+        }
+    },
+    "id": "https://totalwine-7d7d5.firebase.com/TotalWine/users/{{firebase_uid}}/roles",
+    "required": []
+}

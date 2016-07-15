@@ -18,9 +18,10 @@
             emails:root.child('emails'),
             textMessages: root.child('textMessages'),
             
-            getPlayer:getPlayer,
-            getRegistered:getRegistered,
-            updatePlayer:updatePlayer
+            getPlayer: getPlayer,
+            getRegistered: getRegistered,
+            setRole: setRole,
+            updatePlayer: updatePlayer
         };
         return service;
         
@@ -34,8 +35,15 @@
             return firebase.database().ref('users/' + uid + '/registered').once('value');
         }
         
+        function setRole(user) {
+            return firebase.database().ref('users/' + user.uid + '/roles/'+user.role).set(true);  
+        }
+        
         function updatePlayer(playerKey,player) {
-            return firebase.database().ref('users/' + playerKey).set(player);
+            //  Can't use 'set' because with the addition of /uid/roles/... it will overwrite
+            //  unless the full data set is supplied
+            //  return firebase.database().ref('users/' + playerKey).set(player);
+            return firebase.database().ref('users/' + playerKey).update(player);
         }
     };
 }) ();

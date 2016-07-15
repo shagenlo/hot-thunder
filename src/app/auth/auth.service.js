@@ -17,6 +17,7 @@
             login: login,
             logout: logout,
             isLoggedIn: isLoggedIn,
+            setRole: setRole,
             sendWelcomeEmail: sendWelcomeEmail
         };
         
@@ -25,21 +26,25 @@
         
         ////////////////////////////////////////
 
-        function register(user){
+        function register(user) {
             //return firebaseAuthObject.$createUser(user); //deprecated since AngularFire 2.x
             return firebaseAuthObject.$createUserWithEmailAndPassword(user.email, user.password);
         }
         
-        function login(user){
-            //return firebaseAuthObject.$authWithPassword(user); //deprecated since AngularFire 2.x
-            return firebaseAuthObject.$signInWithEmailAndPassword(user.email, user.password);
+        function setRole(user) {
+            return firebaseDataService.setRole(user);
         }
         
-        function logout(){
+        function login(user) {
+            //return firebaseAuthObject.$authWithPassword(user); //deprecated since AngularFire 2.x
+            return firebaseAuthObject.$signInWithEmailAndPassword(user.email, user.password);
+        }       
+        
+        function logout() {
             firebaseAuthObject.$signOut();
         }
         
-        function isLoggedIn(){
+        function isLoggedIn() {
             return firebaseAuthObject.$getAuth();
         }
         

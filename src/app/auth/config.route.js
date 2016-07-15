@@ -19,6 +19,16 @@
             controller: 'AuthController',
             controllerAs:'vm'
         });
+        $routeProvider.when('/register_operator', {
+            templateUrl:'app/auth/register_operator.html',
+            controller: 'AuthController',
+            controllerAs:'vm'
+        });
+        $routeProvider.when('/login_operator', {
+            templateUrl:'app/auth/login_operator.html',
+            controller: 'AuthController',
+            controllerAs:'vm'
+        });        
     };
     
     runFunction.$inject = ['$location', 'authService', 'firebaseDataService', 'PROTECTED_PATHS'];
