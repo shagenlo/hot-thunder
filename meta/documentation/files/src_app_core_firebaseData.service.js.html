@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>src/app/core/firebaseData.service.js - Hot Thunder Game</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="icon" href="../assets/favicon.ico">
+    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+                <h1><img src="../assets/css/logo.png" title="Hot Thunder Game" width="117" height="52"></h1>
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em>API Docs for: 0.0.0</em>
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+                    <h2 class="off-left">APIs</h2>
+                    <div id="api-tabview" class="tabview">
+                        <ul class="tabs">
+                            <li><a href="#api-classes">Classes</a></li>
+                            <li><a href="#api-modules">Modules</a></li>
+                        </ul>
+                
+                        <div id="api-tabview-filter">
+                            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+                        </div>
+                
+                        <div id="api-tabview-panel">
+                            <ul id="api-classes" class="apis classes">
+                                <li><a href="../classes/auth.authController.html">auth.authController</a></li>
+                                <li><a href="../classes/auth.authService.html">auth.authService</a></li>
+                                <li><a href="../classes/auth.configFunction.html">auth.configFunction</a></li>
+                                <li><a href="../classes/auth.shAuthForm.html">auth.shAuthForm</a></li>
+                                <li><a href="../classes/core.firebaseDataService.html">core.firebaseDataService</a></li>
+                                <li><a href="../classes/core.playerService.html">core.playerService</a></li>
+                                <li><a href="../classes/landing.configFunction.html">landing.configFunction</a></li>
+                                <li><a href="../classes/layout.shNavbar.html">layout.shNavbar</a></li>
+                                <li><a href="../classes/player.configFunction.html">player.configFunction</a></li>
+                                <li><a href="../classes/player.PlayerController.html">player.PlayerController</a></li>
+                                <li><a href="../classes/player.shPlayerAviForm.html">player.shPlayerAviForm</a></li>
+                                <li><a href="../classes/player.shPlayerForm.html">player.shPlayerForm</a></li>
+                            </ul>
+                
+                
+                            <ul id="api-modules" class="apis modules">
+                                <li><a href="../modules/app.html">app</a></li>
+                                <li><a href="../modules/app.auth.html">app.auth</a></li>
+                                <li><a href="../modules/app.core.html">app.core</a></li>
+                                <li><a href="../modules/app.core.constant.html">app.core.constant</a></li>
+                                <li><a href="../modules/app.landing.html">app.landing</a></li>
+                                <li><a href="../modules/app.layout.html">app.layout</a></li>
+                                <li><a href="../modules/app.player.html">app.player</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+                    Show:
+                    <label for="api-show-inherited">
+                        <input type="checkbox" id="api-show-inherited" checked>
+                        Inherited
+                    </label>
+            
+                    <label for="api-show-protected">
+                        <input type="checkbox" id="api-show-protected">
+                        Protected
+                    </label>
+            
+                    <label for="api-show-private">
+                        <input type="checkbox" id="api-show-private">
+                        Private
+                    </label>
+                    <label for="api-show-deprecated">
+                        <input type="checkbox" id="api-show-deprecated">
+                        Deprecated
+                    </label>
+            
+                </div>
+            
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+<h1 class="file-heading">File: src/app/core/firebaseData.service.js</h1>
+
+<div class="file">
+    <pre class="code prettyprint linenums">
+/**
+* Firebase Data Service
+*
+* Angular Type: Service
+*
+* Service provider for Firebase Database
+* @namespace core
+* @class firebaseDataService
+* @constructor
+* @static
+* @param {Constant} FIREBASE_LOGGING
+* @return {Object} Service Map Object
+*/
+(function() {
+    &#x27;use strict&#x27;;
+    
+    angular
+        .module(&#x27;app.core&#x27;)
+        .factory(&#x27;firebaseDataService&#x27;, firebaseDataService);
+    
+    firebaseDataService.$inject = [&#x27;FIREBASE_LOGGING&#x27;];
+    function firebaseDataService(FIREBASE_LOGGING){
+        /**
+        * Firebase API root database reference
+        * @property root
+        * @type firebase.database().ref()
+        */
+        var root = firebase.database().ref();
+        
+        /**
+        * Firebase API Auth service reference
+        * @property auth
+        * @type firebase.auth()
+        */
+        var auth = firebase.auth();
+        if (FIREBASE_LOGGING){firebase.database.enableLogging(true);};
+        
+        /**
+        * FirebaseDataService Service Map
+        * @property service
+        * @type Object
+        */
+        var service = {
+            auth:auth,
+            root:root,
+            users:root.child(&#x27;users&#x27;),
+            emails:root.child(&#x27;emails&#x27;),
+            textMessages: root.child(&#x27;textMessages&#x27;),
+            
+            getPlayer: getPlayer,
+            getRegistered: getRegistered,
+            setRole: setRole,
+            updatePlayer: updatePlayer
+        };
+        return service;
+        
+        
+        ///////////////
+        
+        
+        /**
+        * getPlayer() uses the &#x27;once&#x27; functionality of firebase queries to lookup 
+        * and return a user&#x27;s firebase record as an array
+        * @method getPlayer
+        * @param {string} uid A Firebase UID string
+        * @return promise
+        */
+        function getPlayer(uid) {
+            return firebase.database().ref(&#x27;users/&#x27; + uid).once(&#x27;value&#x27;);
+        }
+        
+        
+        /**
+        * getRegistered() looks up the user&#x27;s &#x27;registered&#x27; property in /users/{uid}/registered
+        * @method getRegistered
+        * @param {string} uid
+        * @return {Object} promise, resolves to boolean or null
+        */
+        function getRegistered(uid) {
+            return firebase.database().ref(&#x27;users/&#x27; + uid + &#x27;/registered&#x27;).once(&#x27;value&#x27;);
+        }
+        
+                                     
+        /**
+        * setRole() sets the users role in /users/{uid}/roles ie. &#x27;player&#x27;:true
+        * @method setRole
+        * @param {Object} user  user:{email:&#x27;&#x27;, password:&#x27;&#x27;, role:&#x27;&#x27;, uid:&#x27;&#x27;}
+        * @return {Object} promise, resolves to success/error object
+        */
+        function setRole(user) {
+            return firebase.database().ref(&#x27;users/&#x27; + user.uid + &#x27;/roles/&#x27;+user.role).set(true);  
+        }
+        
+                                
+        /**
+        * updatePlayer uses Firebase .update() to merge an updated player object into the current player record
+        * @method updatePlayer
+        * @param {string} playerKey  a Firebase UID
+        * @param {Object} player an instance of the player() object type from player.service.js
+        * @return {Object} promise, resolves to success/error object
+        */
+        function updatePlayer(playerKey,player) {
+            //  Can&#x27;t use &#x27;set&#x27; because with the addition of /uid/roles/... it will overwrite
+            //  unless the full data set is supplied
+            //  return firebase.database().ref(&#x27;users/&#x27; + playerKey).set(player);
+            return firebase.database().ref(&#x27;users/&#x27; + playerKey).update(player);
+        }
+    }
+}) ();
+    </pre>
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>

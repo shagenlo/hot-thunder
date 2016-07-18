@@ -1,4 +1,19 @@
-(function (){
+/**
+* Application Player Service
+*
+* Angular Type: Factory
+*
+* Service provider for the Player functionality of the application
+* @namespace core
+* @class playerService
+* @constructor
+* @static
+* @param {Object} $rootScope 
+* @param {Object} $firebaseArray
+* @param {Object} firebaseDataService
+* @return {Object} service definition object
+*/
+(function () {
     'use strict'
     
     angular
@@ -6,11 +21,23 @@
         .factory('playerService', playerService);
     
     playerService.$inject = ['$rootScope', '$firebaseArray', 'firebaseDataService'];
-    
     function playerService($rootScope, $firebaseArray, firebaseDataService) {
+        
+        /**
+        * Description for fbUsers
+        * @property fbUsers
+        * @type {Object} AngularFire database reference to @root/Users
+        * @deprecated
+        */
         var fbUsers = null;
+        
+        /**
+        * Description for fbPlayer
+        * @property fbPlayer
+        * @type {Object} AngularFire database reference to @root/Users/{uid}/
+        * @deprecated
+        */
         var fbPlayer = null;
-        var fbPlayerIsRegistered = null;
         
         var service = {
             Player:Player,
@@ -22,7 +49,11 @@
             copySnapshotToPlayer:copySnapshotToPlayer
         };
         
-        //On logout, all Firebase references need to be closed
+        
+        
+        /**
+        * On logout, all Firebase references need to be closed
+        */
         $rootScope.$on('logout', function () {
             if (fbUsers) {
                 fbUsers.$destroy();
@@ -37,7 +68,11 @@
         
         ////////////////
         
-        //Data model template for view and firebase
+        
+        /**
+        * Player function.  Data model template for view and firebase
+        * @method Player
+        */
         function Player() {
             this.firstname = '';
             this.lastname = '';
@@ -51,7 +86,11 @@
             this.uid = firebase.auth().currentUser.uid;
         };
         
-        //Get the firebase:/users AngularFire Array
+        /**
+        * getUsers() Get the firebase:/users AngularFire Array
+        * @method getUsers
+        * @return {Object} fbUsers - an AngularFire array
+        */
         function getUsers() {
             if (!fbUsers) {
                 fbUsers = $firebaseArray(firebaseDataService.users); 
@@ -59,32 +98,58 @@
             return fbUsers;
         };
         
-        //Get the UID of the currently logged in user
+    
+        /**
+        * getUid() Get the UID of the currently logged in user
+        * @method getUid
+        * @return {string} UID of current user
+        */
         function getUid() {
             return firebase.auth().currentUser.uid;
         };
         
-        //Get the registered status of the currently logged-in user
+
+        /**
+        * getRegisteredStatus() Get the registered status of the currently logged-in user
+        * @private playerKey - a UID
+        * @method getRegisteredStatus
+        * @return {Object} promise, resolves to a boolean or null
+        */
         function getRegisteredStatus() {
             var playerKey = getUid();
             return firebaseDataService.getRegistered(playerKey);
         }
      
-        //Check if the player already exists
-        //  In which case we'll take a snapshot into the player model
-        //  Returns a promise
+                                        
+        /**
+        * getPlayer() Check if the player already exists, In which case we'll take a snapshot into the player model
+        * @method getPlayer
+        * @return {Object} promise
+        */
         function getPlayer() {
             return firebaseDataService.getPlayer(getUid());
         };
         
-        //Create Player in database
-        //  Returns a promise
+                              
+        /**
+        * updatePlayer() Create Player in database
+        * @method updatePlayer
+        * @param {Object} player
+        * @return {Object} promise
+        */
         function updatePlayer(player) {
             var playerKey = getUid();
             return firebaseDataService.updatePlayer(playerKey,player);
         };
         
-        //Apply data in the firebase snapshot to a Player array
+
+        /**
+        * copySnapshotToPlayer() Apply data in the firebase snapshot to a Player array
+        * @method copySnapshotToPlayer
+        * @param {Object} player
+        * @param {Object} snapshot
+        * @return Nothing.  This utility function copies contents of the snapshot into the player object.
+        */
         function copySnapshotToPlayer(player,snapshot) {
             var snap = snapshot.val();
             for (var key in snap) {

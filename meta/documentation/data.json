@@ -1,0 +1,1750 @@
+{
+    "project": {
+        "name": "Hot Thunder Game",
+        "description": "Hot Thunder: A multiplayer, educational game platform",
+        "version": "0.0.0",
+        "url": "https://totalwine-7d7d5.firebaseio.com/"
+    },
+    "files": {
+        "meta/Firebase-json-Schema/js/jquery.js": {
+            "name": "meta/Firebase-json-Schema/js/jquery.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "meta/Firebase-json-Schema/web/js/jquery.js": {
+            "name": "meta/Firebase-json-Schema/web/js/jquery.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/app/auth/auth.controller.js": {
+            "name": "src/app/auth/auth.controller.js",
+            "modules": {},
+            "classes": {
+                "auth.authController": 1
+            },
+            "fors": {},
+            "namespaces": {
+                "auth": 1
+            }
+        },
+        "src/app/auth/auth.module.js": {
+            "name": "src/app/auth/auth.module.js",
+            "modules": {
+                "app.auth": 1
+            },
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/app/auth/auth.service.js": {
+            "name": "src/app/auth/auth.service.js",
+            "modules": {},
+            "classes": {
+                "auth.authService": 1
+            },
+            "fors": {},
+            "namespaces": {
+                "auth": 1
+            }
+        },
+        "src/app/auth/authForm.directive.js": {
+            "name": "src/app/auth/authForm.directive.js",
+            "modules": {},
+            "classes": {
+                "auth.shAuthForm": 1
+            },
+            "fors": {},
+            "namespaces": {
+                "auth": 1
+            }
+        },
+        "src/app/auth/config.route.js": {
+            "name": "src/app/auth/config.route.js",
+            "modules": {},
+            "classes": {
+                "auth.configFunction": 1
+            },
+            "fors": {},
+            "namespaces": {
+                "auth": 1
+            }
+        },
+        "src/app/core/config.firebase.js": {
+            "name": "src/app/core/config.firebase.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/app/core/constants.js": {
+            "name": "src/app/core/constants.js",
+            "modules": {
+                "app.core.constant": 1
+            },
+            "classes": {},
+            "fors": {},
+            "namespaces": {
+                "core": 1
+            }
+        },
+        "src/app/core/core.module.js": {
+            "name": "src/app/core/core.module.js",
+            "modules": {
+                "app.core": 1
+            },
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/app/core/firebaseData.service.js": {
+            "name": "src/app/core/firebaseData.service.js",
+            "modules": {},
+            "classes": {
+                "core.firebaseDataService": 1
+            },
+            "fors": {},
+            "namespaces": {
+                "core": 1
+            }
+        },
+        "src/app/core/player.service.js": {
+            "name": "src/app/core/player.service.js",
+            "modules": {},
+            "classes": {
+                "core.playerService": 1
+            },
+            "fors": {},
+            "namespaces": {
+                "core": 1
+            }
+        },
+        "src/app/game/config.route.js": {
+            "name": "src/app/game/config.route.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/app/game/join.controller.js": {
+            "name": "src/app/game/join.controller.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/app/game/join.module.js": {
+            "name": "src/app/game/join.module.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/app/landing/config.route.js": {
+            "name": "src/app/landing/config.route.js",
+            "modules": {},
+            "classes": {
+                "landing.configFunction": 1
+            },
+            "fors": {},
+            "namespaces": {
+                "landing": 1
+            }
+        },
+        "src/app/landing/landing.module.js": {
+            "name": "src/app/landing/landing.module.js",
+            "modules": {
+                "app.landing": 1
+            },
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/app/layout/layout.module.js": {
+            "name": "src/app/layout/layout.module.js",
+            "modules": {
+                "app.layout": 1
+            },
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/app/layout/navbar.directive.js": {
+            "name": "src/app/layout/navbar.directive.js",
+            "modules": {},
+            "classes": {
+                "layout.shNavbar": 1
+            },
+            "fors": {},
+            "namespaces": {
+                "layout": 1
+            }
+        },
+        "src/app/player/config.route.js": {
+            "name": "src/app/player/config.route.js",
+            "modules": {},
+            "classes": {
+                "player.configFunction": 1
+            },
+            "fors": {},
+            "namespaces": {
+                "player": 1
+            }
+        },
+        "src/app/player/player.controller.js": {
+            "name": "src/app/player/player.controller.js",
+            "modules": {},
+            "classes": {
+                "player.PlayerController": 1
+            },
+            "fors": {},
+            "namespaces": {
+                "player": 1
+            }
+        },
+        "src/app/player/player.directive.js": {
+            "name": "src/app/player/player.directive.js",
+            "modules": {},
+            "classes": {
+                "player.shPlayerForm": 1
+            },
+            "fors": {},
+            "namespaces": {
+                "player": 1
+            }
+        },
+        "src/app/player/player.module.js": {
+            "name": "src/app/player/player.module.js",
+            "modules": {
+                "app.player": 1
+            },
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/app/player/playerAvi.directive.js": {
+            "name": "src/app/player/playerAvi.directive.js",
+            "modules": {},
+            "classes": {
+                "player.shPlayerAviForm": 1
+            },
+            "fors": {},
+            "namespaces": {
+                "player": 1
+            }
+        },
+        "src/app/app.module.js": {
+            "name": "src/app/app.module.js",
+            "modules": {
+                "app": 1
+            },
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {
+        "app.auth": {
+            "name": "app.auth",
+            "submodules": {},
+            "elements": {},
+            "classes": {
+                "auth.authController": 1,
+                "auth.authService": 1,
+                "auth.shAuthForm": 1,
+                "auth.configFunction": 1
+            },
+            "fors": {},
+            "namespaces": {
+                "auth": 1,
+                "core": 1
+            },
+            "tag": "module",
+            "file": "src/app/auth/config.route.js",
+            "line": 2,
+            "description": "The Authentication module provides \nregistration and login services and views to the application.\n\nAngular Type: Module"
+        },
+        "app.core.constant": {
+            "name": "app.core.constant",
+            "submodules": {},
+            "elements": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "src/app/core/constants.js",
+            "line": 1,
+            "description": "Constants Definitions - this is not actually a module, just naming it so the documentation generator can catch it.\n\n 'FIREBASE_URL','https://totalwine-7d7d5.firebaseio.com/'\n\n 'API_KEY','AIzaSyBXjwIZIm-KpJKRhBoqjlIW0mH5Bo2VAV0'\n\n 'AUTH_DOMAIN','totalwine-7d7d5.firebaseapp.com'\n\n 'DATABASE_URL','https://totalwine-7d7d5.firebaseio.com'\n\n 'STORAGE_BUCKET',''\n\n 'PROTECTED_PATHS', ['/player', '/playerAvi', '/join']\n\n 'FIREBASE_LOGGING',false\n\n 'AVATAR_COUNT',32\n\n 'AVATAR_PREFIX','svg-'\n\nAngular Type: Constants"
+        },
+        "app.core": {
+            "name": "app.core",
+            "submodules": {},
+            "elements": {},
+            "classes": {
+                "core.firebaseDataService": 1,
+                "core.playerService": 1,
+                "landing.configFunction": 1
+            },
+            "fors": {},
+            "namespaces": {
+                "core": 1,
+                "landing": 1
+            },
+            "tag": "module",
+            "file": "src/app/landing/config.route.js",
+            "line": 1,
+            "description": "Core Angular Application Module\n\nAngular Type: Module"
+        },
+        "app.landing": {
+            "name": "app.landing",
+            "submodules": {},
+            "elements": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "src/app/landing/landing.module.js",
+            "line": 1,
+            "description": "Landing module definition\n\nAngular Type: module"
+        },
+        "app.layout": {
+            "name": "app.layout",
+            "submodules": {},
+            "elements": {},
+            "classes": {
+                "layout.shNavbar": 1,
+                "player.configFunction": 1,
+                "player.PlayerController": 1,
+                "player.shPlayerForm": 1
+            },
+            "fors": {},
+            "namespaces": {
+                "layout": 1,
+                "player": 1
+            },
+            "tag": "module",
+            "file": "src/app/player/player.directive.js",
+            "line": 1,
+            "description": "Layout Module manges the applications title bar\n\nAngular Type: Module"
+        },
+        "app.player": {
+            "name": "app.player",
+            "submodules": {},
+            "elements": {},
+            "classes": {
+                "player.shPlayerAviForm": 1
+            },
+            "fors": {},
+            "namespaces": {
+                "player": 1
+            },
+            "tag": "module",
+            "file": "src/app/player/playerAvi.directive.js",
+            "line": 1,
+            "description": "The Player manages player information.\n\nAngular Type: Module"
+        },
+        "app": {
+            "name": "app",
+            "submodules": {},
+            "elements": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "src/app/app.module.js",
+            "line": 1,
+            "description": "Main Angular Application Module\n\nAngular Type: Module\n\nIn configFunction configures the following services:\n\n  $routeProvider        https://docs.angularjs.org/api/ngRoute/provider/$routeProvider\n\n  $mdIconProvider       https://docs.angularjs.org/api/ng/provider/$logProvider\n\n  $logProvider          https://material.angularjs.org/latest/api/service/$mdIconProvider\n\n  $mdThemingProvider    https://material.angularjs.org/latest/api/service/$mdThemingProvider\n\nIn runFunction set up watcher for routeChangeError event and route to root view in case of AUTH_REQUIRED",
+            "requires": [
+                "ngMaterial",
+                "ngRoute",
+                "ngMessages",
+                "ngAria",
+                "firebase",
+                "app.core",
+                "app.landing",
+                "app.layout",
+                "app.auth",
+                "app.player",
+                "app.join"
+            ],
+            "itemtype": "method"
+        }
+    },
+    "classes": {
+        "auth.authController": {
+            "name": "auth.authController",
+            "shortname": "auth.authController",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "app.auth",
+            "namespace": "auth",
+            "file": "src/app/auth/auth.controller.js",
+            "line": 1,
+            "description": "AngularJS Controller for Authentication Module\n\nAngular Type: Controller",
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "$location",
+                    "description": "AngularJS Routing Service"
+                },
+                {
+                    "name": "$scope",
+                    "description": "AngularJS Scope Service"
+                },
+                {
+                    "name": "authService",
+                    "description": "Application Authentication Service"
+                },
+                {
+                    "name": "firebaseDataService",
+                    "description": "Application Firebase Data Service"
+                }
+            ]
+        },
+        "auth.authService": {
+            "name": "auth.authService",
+            "shortname": "auth.authService",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "app.auth",
+            "namespace": "auth",
+            "file": "src/app/auth/auth.service.js",
+            "line": 1,
+            "description": "Authentication Service class for Authentication Module\n\nAngular Type: Factory",
+            "is_constructor": 1,
+            "static": 1,
+            "params": [
+                {
+                    "name": "$firebaseAuth",
+                    "description": "Instance of AngularFire $firebaseAuth",
+                    "type": "Object"
+                },
+                {
+                    "name": "firebaseDataService",
+                    "description": "Application Service for Firebase interaction",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "AuthService factory object",
+                "type": "Object"
+            }
+        },
+        "auth.shAuthForm": {
+            "name": "auth.shAuthForm",
+            "shortname": "auth.shAuthForm",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "app.auth",
+            "namespace": "auth",
+            "file": "src/app/auth/authForm.directive.js",
+            "line": 1,
+            "description": "shAuthForm Directive\n\nAngular Type: Directive",
+            "is_constructor": 1
+        },
+        "auth.configFunction": {
+            "name": "auth.configFunction",
+            "shortname": "auth.configFunction",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "app.auth",
+            "namespace": "auth",
+            "file": "src/app/auth/config.route.js",
+            "line": 2,
+            "description": "Configuration module for app.auth\n\nAngular Type: config function, run function",
+            "is_constructor": 1
+        },
+        "core.firebaseDataService": {
+            "name": "core.firebaseDataService",
+            "shortname": "core.firebaseDataService",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "app.core",
+            "namespace": "core",
+            "file": "src/app/core/firebaseData.service.js",
+            "line": 1,
+            "description": "Firebase Data Service\n\nAngular Type: Service\n\nService provider for Firebase Database",
+            "is_constructor": 1,
+            "static": 1,
+            "params": [
+                {
+                    "name": "FIREBASE_LOGGING",
+                    "description": "",
+                    "type": "Constant"
+                }
+            ],
+            "return": {
+                "description": "Service Map Object",
+                "type": "Object"
+            }
+        },
+        "core.playerService": {
+            "name": "core.playerService",
+            "shortname": "core.playerService",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "app.core",
+            "namespace": "core",
+            "file": "src/app/core/player.service.js",
+            "line": 1,
+            "description": "Application Player Service\n\nAngular Type: Factory\n\nService provider for the Player functionality of the application",
+            "is_constructor": 1,
+            "static": 1,
+            "params": [
+                {
+                    "name": "$rootScope",
+                    "description": "",
+                    "type": "Object"
+                },
+                {
+                    "name": "$firebaseArray",
+                    "description": "",
+                    "type": "Object"
+                },
+                {
+                    "name": "firebaseDataService",
+                    "description": "",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "service definition object",
+                "type": "Object"
+            }
+        },
+        "landing.configFunction": {
+            "name": "landing.configFunction",
+            "shortname": "landing.configFunction",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "app.core",
+            "namespace": "landing",
+            "file": "src/app/landing/config.route.js",
+            "line": 1,
+            "description": "Configuration module for app.landing.  Set up routeProvider to use the template app/landing/landing.html on '/' route.\n\nAngular type: configuration definition",
+            "is_constructor": 1
+        },
+        "layout.shNavbar": {
+            "name": "layout.shNavbar",
+            "shortname": "layout.shNavbar",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "app.layout",
+            "namespace": "layout",
+            "file": "src/app/layout/navbar.directive.js",
+            "line": 1,
+            "description": "shNavbar Directive Definition\n\nAngular Type: Directive",
+            "is_constructor": 1
+        },
+        "player.configFunction": {
+            "name": "player.configFunction",
+            "shortname": "player.configFunction",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "app.layout",
+            "namespace": "player",
+            "file": "src/app/player/config.route.js",
+            "line": 1,
+            "description": "Configuration definitions for player module (player.module.js)\n\nSets up routes and controller bindings for player data entry views\n\nAngular Type: Configuration",
+            "is_constructor": 1
+        },
+        "player.PlayerController": {
+            "name": "player.PlayerController",
+            "shortname": "player.PlayerController",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "app.layout",
+            "namespace": "player",
+            "file": "src/app/player/player.controller.js",
+            "line": 1,
+            "description": "AngularJS Controller for Player Module\n\nAngular Type: Controller",
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "playerService",
+                    "description": ""
+                }
+            ]
+        },
+        "player.shPlayerForm": {
+            "name": "player.shPlayerForm",
+            "shortname": "player.shPlayerForm",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "app.layout",
+            "namespace": "player",
+            "file": "src/app/player/player.directive.js",
+            "line": 1,
+            "description": "shPlayerForm Directive\n\nAngular Type: Directive",
+            "is_constructor": 1,
+            "return": {
+                "description": "shPlayerForm directive instance\nView: app/player/playerForm.html",
+                "type": "Object"
+            }
+        },
+        "player.shPlayerAviForm": {
+            "name": "player.shPlayerAviForm",
+            "shortname": "player.shPlayerAviForm",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "app.player",
+            "namespace": "player",
+            "file": "src/app/player/playerAvi.directive.js",
+            "line": 1,
+            "description": "shPlayerAviForm Directive\n\nAngular Type: Directive",
+            "is_constructor": 1,
+            "return": {
+                "description": "shPlayerAviForm directive instance\nView: app/player/playerAviForm.html",
+                "type": "Object"
+            }
+        }
+    },
+    "elements": {},
+    "classitems": [
+        {
+            "file": "meta/Firebase-json-Schema/js/jquery.js",
+            "line": 4182,
+            "description": "Utility function for retreiving the text value of an array of DOM nodes",
+            "params": [
+                {
+                    "name": "elem",
+                    "description": "",
+                    "type": "Array|Element"
+                }
+            ],
+            "class": "auth.authController"
+        },
+        {
+            "file": "meta/Firebase-json-Schema/web/js/jquery.js",
+            "line": 4182,
+            "description": "Utility function for retreiving the text value of an array of DOM nodes",
+            "params": [
+                {
+                    "name": "elem",
+                    "description": "",
+                    "type": "Array|Element"
+                }
+            ],
+            "class": "auth.authController"
+        },
+        {
+            "file": "src/app/auth/auth.controller.js",
+            "line": 24,
+            "description": "ViewModel Alias",
+            "itemtype": "property",
+            "name": "vm",
+            "type": "{Object} instance alias",
+            "class": "auth.authController",
+            "namespace": "auth"
+        },
+        {
+            "file": "src/app/auth/auth.controller.js",
+            "line": 31,
+            "description": "Error object",
+            "itemtype": "property",
+            "name": "error",
+            "type": "{Object}",
+            "class": "auth.authController",
+            "namespace": "auth"
+        },
+        {
+            "file": "src/app/auth/auth.controller.js",
+            "line": 41,
+            "description": "Registers a user in the system via the firebaseDataService, \n                    sets the user role, \n                    sets the view path based on user role",
+            "itemtype": "method",
+            "name": "register",
+            "params": [
+                {
+                    "name": "user",
+                    "description": "user:{email:'', password:'', role:'', uid:''}",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "The return object isn't used, may be ble to remove it.",
+                "type": "Object"
+            },
+            "class": "auth.authController",
+            "namespace": "auth"
+        },
+        {
+            "file": "src/app/auth/auth.controller.js",
+            "line": 84,
+            "description": "Logs a user into the system, then sets the view path based on user role",
+            "itemtype": "method",
+            "name": "login",
+            "params": [
+                {
+                    "name": "user",
+                    "description": "user:{email:'', password:'', role:'', uid:''}",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "The return object isn't used, may be able to remove it.",
+                "type": "Object"
+            },
+            "class": "auth.authController",
+            "namespace": "auth"
+        },
+        {
+            "file": "src/app/auth/auth.service.js",
+            "line": 23,
+            "description": "firebaseAuthObject",
+            "itemtype": "property",
+            "name": "firebaseAuthObject",
+            "type": "Instance of $firebaseAuth, an AngularFire service.",
+            "class": "auth.authService",
+            "module": "app.auth",
+            "namespace": "auth"
+        },
+        {
+            "file": "src/app/auth/auth.service.js",
+            "line": 30,
+            "description": "authService Service definition",
+            "itemtype": "property",
+            "name": "service",
+            "type": "Array",
+            "class": "auth.authService",
+            "module": "app.auth",
+            "namespace": "auth"
+        },
+        {
+            "file": "src/app/auth/auth.service.js",
+            "line": 51,
+            "description": "Registration function using the Firebase $createUserWithEmailAndPassword() method",
+            "itemtype": "method",
+            "name": "register",
+            "params": [
+                {
+                    "name": "user",
+                    "description": "user:{email:'', password:'', role:'', uid:''}",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "promise object",
+                "type": "Object"
+            },
+            "class": "auth.authService",
+            "module": "app.auth",
+            "namespace": "auth"
+        },
+        {
+            "file": "src/app/auth/auth.service.js",
+            "line": 61,
+            "description": "This method sets the appropriate role in the user record by calling firebaseDataService.setRole(user).",
+            "itemtype": "method",
+            "name": "setRole",
+            "params": [
+                {
+                    "name": "user",
+                    "description": "user:{email:'', password:'', role:'', uid:''}",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "promise object",
+                "type": "Object"
+            },
+            "class": "auth.authService",
+            "module": "app.auth",
+            "namespace": "auth"
+        },
+        {
+            "file": "src/app/auth/auth.service.js",
+            "line": 72,
+            "description": "Logs user into the system using the Firebase $signInWithEmailAndPassword() method.",
+            "itemtype": "method",
+            "name": "login",
+            "params": [
+                {
+                    "name": "user",
+                    "description": "user:{email:'', password:'', role:'', uid:''}",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "promise object",
+                "type": "Object"
+            },
+            "class": "auth.authService",
+            "module": "app.auth",
+            "namespace": "auth"
+        },
+        {
+            "file": "src/app/auth/auth.service.js",
+            "line": 83,
+            "description": "Logout function using the Firebase $signOut() method.",
+            "itemtype": "method",
+            "name": "logout",
+            "class": "auth.authService",
+            "module": "app.auth",
+            "namespace": "auth"
+        },
+        {
+            "file": "src/app/auth/auth.service.js",
+            "line": 92,
+            "description": "This method determines if a user is currently logged in using the Firebase $getAuth() method.",
+            "itemtype": "method",
+            "name": "isLoggedIn",
+            "return": {
+                "description": "An object containing the fields uid (the unique user ID), provider \n                 (string identifying the provider), * auth (the authentication token \n                 payload), and expires (expiration time in seconds since the Unix epoch) \n                 - and more, depending upon the provider used to authenticate",
+                "type": "Object"
+            },
+            "class": "auth.authService",
+            "module": "app.auth",
+            "namespace": "auth"
+        },
+        {
+            "file": "src/app/auth/auth.service.js",
+            "line": 105,
+            "description": "sendWelcomeEmail - Unimplemented",
+            "itemtype": "method",
+            "name": "sendWelcomeEmail",
+            "params": [
+                {
+                    "name": "emailAddress",
+                    "description": "",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "description",
+                "type": "Object"
+            },
+            "class": "auth.authService",
+            "module": "app.auth",
+            "namespace": "auth"
+        },
+        {
+            "file": "src/app/auth/authForm.directive.js",
+            "line": 18,
+            "description": "shAuthForm directive function definition",
+            "itemtype": "method",
+            "name": "shAuthForm",
+            "return": {
+                "description": "description",
+                "type": "Object"
+            },
+            "class": "auth.shAuthForm",
+            "module": "app.auth",
+            "namespace": "auth"
+        },
+        {
+            "file": "src/app/auth/authForm.directive.js",
+            "line": 42,
+            "description": "Controller for shAuthForm Directive",
+            "itemtype": "property",
+            "name": "user",
+            "type": "Object",
+            "class": "auth.shAuthForm",
+            "module": "app.auth",
+            "namespace": "auth"
+        },
+        {
+            "file": "src/app/auth/config.route.js",
+            "line": 19,
+            "description": "configFunction definition.  Sets up routes and controllers for registration and login views",
+            "itemtype": "method",
+            "name": "configFunction",
+            "params": [
+                {
+                    "name": "$routeProvider",
+                    "description": "An AngularJS service object",
+                    "type": "Object"
+                }
+            ],
+            "class": "auth.configFunction",
+            "module": "app.auth",
+            "namespace": "auth"
+        },
+        {
+            "file": "src/app/auth/config.route.js",
+            "line": 50,
+            "description": "runFunction definition.  Sets up a listener for onAuthStateChanged, where we ensure that\n                         protected paths are accessed by authenticated users only",
+            "itemtype": "method",
+            "name": "runFunction",
+            "params": [
+                {
+                    "name": "$location",
+                    "description": "AngularJS service object",
+                    "type": "Object"
+                },
+                {
+                    "name": "authService",
+                    "description": "Service object defined aat /auth/auth.service.js",
+                    "type": "Object"
+                },
+                {
+                    "name": "firebaseDataService",
+                    "description": "Service object defined at /core/firebaseData.service",
+                    "type": "Object"
+                },
+                {
+                    "name": "PROTECTED_PATHS",
+                    "description": "Array of strings defined in /core/constants.js",
+                    "type": "Object"
+                }
+            ],
+            "class": "auth.configFunction",
+            "module": "app.auth",
+            "namespace": "auth"
+        },
+        {
+            "file": "src/app/auth/config.route.js",
+            "line": 69,
+            "description": "pathIsProtected function definition",
+            "itemtype": "method",
+            "name": "pathIsProtected",
+            "params": [
+                {
+                    "name": "path",
+                    "description": "",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "path is protected?",
+                "type": "Boolean"
+            },
+            "class": "auth.configFunction",
+            "module": "app.auth",
+            "namespace": "auth"
+        },
+        {
+            "file": "src/app/core/config.firebase.js",
+            "line": 1,
+            "description": "Configuration information is defined as Constants in app/core/constants.js\nThis javascript is defined and executed as part of the bootstrap process.\nIt initializes the Firebase system.",
+            "class": "core.firebaseDataService",
+            "module": "app.auth",
+            "namespace": "auth"
+        },
+        {
+            "file": "src/app/core/firebaseData.service.js",
+            "line": 23,
+            "description": "Firebase API root database reference",
+            "itemtype": "property",
+            "name": "root",
+            "type": "firebase.database().ref()",
+            "class": "core.firebaseDataService",
+            "module": "app.core",
+            "namespace": "core"
+        },
+        {
+            "file": "src/app/core/firebaseData.service.js",
+            "line": 30,
+            "description": "Firebase API Auth service reference",
+            "itemtype": "property",
+            "name": "auth",
+            "type": "firebase.auth()",
+            "class": "core.firebaseDataService",
+            "module": "app.core",
+            "namespace": "core"
+        },
+        {
+            "file": "src/app/core/firebaseData.service.js",
+            "line": 38,
+            "description": "FirebaseDataService Service Map",
+            "itemtype": "property",
+            "name": "service",
+            "type": "Object",
+            "class": "core.firebaseDataService",
+            "module": "app.core",
+            "namespace": "core"
+        },
+        {
+            "file": "src/app/core/firebaseData.service.js",
+            "line": 61,
+            "description": "getPlayer() uses the 'once' functionality of firebase queries to lookup \nand return a user's firebase record as an array",
+            "itemtype": "method",
+            "name": "getPlayer",
+            "params": [
+                {
+                    "name": "uid",
+                    "description": "A Firebase UID string",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "promise"
+            },
+            "class": "core.firebaseDataService",
+            "module": "app.core",
+            "namespace": "core"
+        },
+        {
+            "file": "src/app/core/firebaseData.service.js",
+            "line": 73,
+            "description": "getRegistered() looks up the user's 'registered' property in /users/{uid}/registered",
+            "itemtype": "method",
+            "name": "getRegistered",
+            "params": [
+                {
+                    "name": "uid",
+                    "description": "",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "promise, resolves to boolean or null",
+                "type": "Object"
+            },
+            "class": "core.firebaseDataService",
+            "module": "app.core",
+            "namespace": "core"
+        },
+        {
+            "file": "src/app/core/firebaseData.service.js",
+            "line": 84,
+            "description": "setRole() sets the users role in /users/{uid}/roles ie. 'player':true",
+            "itemtype": "method",
+            "name": "setRole",
+            "params": [
+                {
+                    "name": "user",
+                    "description": "user:{email:'', password:'', role:'', uid:''}",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "promise, resolves to success/error object",
+                "type": "Object"
+            },
+            "class": "core.firebaseDataService",
+            "module": "app.core",
+            "namespace": "core"
+        },
+        {
+            "file": "src/app/core/firebaseData.service.js",
+            "line": 95,
+            "description": "updatePlayer uses Firebase .update() to merge an updated player object into the current player record",
+            "itemtype": "method",
+            "name": "updatePlayer",
+            "params": [
+                {
+                    "name": "playerKey",
+                    "description": "a Firebase UID",
+                    "type": "String"
+                },
+                {
+                    "name": "player",
+                    "description": "an instance of the player() object type from player.service.js",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "promise, resolves to success/error object",
+                "type": "Object"
+            },
+            "class": "core.firebaseDataService",
+            "module": "app.core",
+            "namespace": "core"
+        },
+        {
+            "file": "src/app/core/player.service.js",
+            "line": 26,
+            "description": "Description for fbUsers",
+            "itemtype": "property",
+            "name": "fbUsers",
+            "type": "{Object} AngularFire database reference to @root/Users",
+            "deprecated": true,
+            "class": "core.playerService",
+            "module": "app.core",
+            "namespace": "core"
+        },
+        {
+            "file": "src/app/core/player.service.js",
+            "line": 34,
+            "description": "Description for fbPlayer",
+            "itemtype": "property",
+            "name": "fbPlayer",
+            "type": "{Object} AngularFire database reference to @root/Users/{uid}/",
+            "deprecated": true,
+            "class": "core.playerService",
+            "module": "app.core",
+            "namespace": "core"
+        },
+        {
+            "file": "src/app/core/player.service.js",
+            "line": 54,
+            "description": "On logout, all Firebase references need to be closed",
+            "class": "core.playerService",
+            "module": "app.core",
+            "namespace": "core"
+        },
+        {
+            "file": "src/app/core/player.service.js",
+            "line": 72,
+            "description": "Player function.  Data model template for view and firebase",
+            "itemtype": "method",
+            "name": "Player",
+            "class": "core.playerService",
+            "module": "app.core",
+            "namespace": "core"
+        },
+        {
+            "file": "src/app/core/player.service.js",
+            "line": 89,
+            "description": "getUsers() Get the firebase:/users AngularFire Array",
+            "itemtype": "method",
+            "name": "getUsers",
+            "return": {
+                "description": "fbUsers - an AngularFire array",
+                "type": "Object"
+            },
+            "class": "core.playerService",
+            "module": "app.core",
+            "namespace": "core"
+        },
+        {
+            "file": "src/app/core/player.service.js",
+            "line": 102,
+            "description": "getUid() Get the UID of the currently logged in user",
+            "itemtype": "method",
+            "name": "getUid",
+            "return": {
+                "description": "UID of current user",
+                "type": "String"
+            },
+            "class": "core.playerService",
+            "module": "app.core",
+            "namespace": "core"
+        },
+        {
+            "file": "src/app/core/player.service.js",
+            "line": 112,
+            "description": "getRegisteredStatus() Get the registered status of the currently logged-in user",
+            "access": "private",
+            "tagname": "playerKey - a UID",
+            "itemtype": "method",
+            "name": "getRegisteredStatus",
+            "return": {
+                "description": "promise, resolves to a boolean or null",
+                "type": "Object"
+            },
+            "class": "core.playerService",
+            "module": "app.core",
+            "namespace": "core"
+        },
+        {
+            "file": "src/app/core/player.service.js",
+            "line": 124,
+            "description": "getPlayer() Check if the player already exists, In which case we'll take a snapshot into the player model",
+            "itemtype": "method",
+            "name": "getPlayer",
+            "return": {
+                "description": "promise",
+                "type": "Object"
+            },
+            "class": "core.playerService",
+            "module": "app.core",
+            "namespace": "core"
+        },
+        {
+            "file": "src/app/core/player.service.js",
+            "line": 134,
+            "description": "updatePlayer() Create Player in database",
+            "itemtype": "method",
+            "name": "updatePlayer",
+            "params": [
+                {
+                    "name": "player",
+                    "description": "",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "promise",
+                "type": "Object"
+            },
+            "class": "core.playerService",
+            "module": "app.core",
+            "namespace": "core"
+        },
+        {
+            "file": "src/app/core/player.service.js",
+            "line": 146,
+            "description": "copySnapshotToPlayer() Apply data in the firebase snapshot to a Player array",
+            "itemtype": "method",
+            "name": "copySnapshotToPlayer",
+            "params": [
+                {
+                    "name": "player",
+                    "description": "",
+                    "type": "Object"
+                },
+                {
+                    "name": "snapshot",
+                    "description": "",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "Nothing.  This utility function copies contents of the snapshot into the player object."
+            },
+            "class": "core.playerService",
+            "module": "app.core",
+            "namespace": "core"
+        },
+        {
+            "file": "src/app/game/config.route.js",
+            "line": 1,
+            "description": "Join module Configuration Function\nAngular Type: Configuration",
+            "class": "landing.configFunction",
+            "module": "app.core",
+            "namespace": "core"
+        },
+        {
+            "file": "src/app/game/config.route.js",
+            "line": 12,
+            "description": "function configFunction - configures route and controller for 'join' module",
+            "itemtype": "method",
+            "name": "configFunction",
+            "params": [
+                {
+                    "name": "$routeProvider",
+                    "description": "",
+                    "type": "Object"
+                }
+            ],
+            "class": "landing.configFunction",
+            "module": "app.core",
+            "namespace": "core"
+        },
+        {
+            "file": "src/app/game/config.route.js",
+            "line": 29,
+            "description": "function resolveUser",
+            "itemtype": "method",
+            "name": "resolveUser",
+            "params": [
+                {
+                    "name": "authService",
+                    "description": "",
+                    "type": "Object"
+                }
+            ],
+            "class": "landing.configFunction",
+            "module": "app.core",
+            "namespace": "core"
+        },
+        {
+            "file": "src/app/game/join.controller.js",
+            "line": 1,
+            "description": "Join module definition\nAngular Type: Module",
+            "class": "landing.configFunction",
+            "module": "app.core",
+            "namespace": "core"
+        },
+        {
+            "file": "src/app/game/join.controller.js",
+            "line": 14,
+            "description": "function JoinController",
+            "itemtype": "method",
+            "name": "JoinController",
+            "class": "landing.configFunction",
+            "module": "app.core",
+            "namespace": "core"
+        },
+        {
+            "file": "src/app/game/join.module.js",
+            "line": 1,
+            "description": "Join module definition\nAngular Type: Module",
+            "class": "landing.configFunction",
+            "module": "app.core",
+            "namespace": "core"
+        },
+        {
+            "file": "src/app/layout/navbar.directive.js",
+            "line": 18,
+            "description": "shNavbar directive declaration",
+            "itemtype": "method",
+            "name": "shNavbar",
+            "class": "layout.shNavbar",
+            "module": "app.layout",
+            "namespace": "layout"
+        },
+        {
+            "file": "src/app/layout/navbar.directive.js",
+            "line": 34,
+            "description": "function NavbarController definition",
+            "access": "private",
+            "tagname": "openMenu {function}",
+            "itemtype": "method",
+            "name": "NavbarController",
+            "params": [
+                {
+                    "name": "$rootScope",
+                    "description": "",
+                    "type": "Object"
+                },
+                {
+                    "name": "$location",
+                    "description": "",
+                    "type": "Object"
+                },
+                {
+                    "name": "authService",
+                    "description": "",
+                    "type": "Object"
+                },
+                {
+                    "name": "playerService",
+                    "description": "",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "description",
+                "type": "Object"
+            },
+            "class": "layout.shNavbar",
+            "module": "app.layout",
+            "namespace": "layout"
+        },
+        {
+            "file": "src/app/layout/navbar.directive.js",
+            "line": 62,
+            "description": "function openMenu",
+            "itemtype": "method",
+            "name": "openMenu",
+            "params": [
+                {
+                    "name": "$mdOpenMenu",
+                    "description": "",
+                    "type": "Object"
+                },
+                {
+                    "name": "ev",
+                    "description": "",
+                    "type": "Object"
+                }
+            ],
+            "class": "layout.shNavbar",
+            "module": "app.layout",
+            "namespace": "layout"
+        },
+        {
+            "file": "src/app/layout/navbar.directive.js",
+            "line": 86,
+            "description": "Logout function\n\nLogout user, broadcast 'logout' event and set $location = '/'",
+            "itemtype": "method",
+            "name": "logout",
+            "class": "layout.shNavbar",
+            "module": "app.layout",
+            "namespace": "layout"
+        },
+        {
+            "file": "src/app/layout/navbar.directive.js",
+            "line": 98,
+            "description": "Navigate function",
+            "itemtype": "method",
+            "name": "navigate",
+            "params": [
+                {
+                    "name": "to",
+                    "description": "$location path",
+                    "type": "String"
+                }
+            ],
+            "class": "layout.shNavbar",
+            "module": "app.layout",
+            "namespace": "layout"
+        },
+        {
+            "file": "src/app/player/config.route.js",
+            "line": 38,
+            "description": "resolveUser function",
+            "itemtype": "method",
+            "name": "resolveUser",
+            "params": [
+                {
+                    "name": "authService",
+                    "description": "",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "promise",
+                "type": "Object"
+            },
+            "class": "player.configFunction",
+            "module": "app.layout",
+            "namespace": "player"
+        },
+        {
+            "file": "src/app/player/player.controller.js",
+            "line": 19,
+            "description": "ViewModel Alias",
+            "itemtype": "property",
+            "name": "vm",
+            "type": "Object",
+            "class": "player.PlayerController",
+            "module": "app.layout",
+            "namespace": "player"
+        },
+        {
+            "file": "src/app/player/player.controller.js",
+            "line": 26,
+            "description": "Error object",
+            "itemtype": "property",
+            "name": "error",
+            "type": "error",
+            "class": "player.PlayerController",
+            "module": "app.layout",
+            "namespace": "player"
+        },
+        {
+            "file": "src/app/player/player.directive.js",
+            "line": 37,
+            "description": "shPlayerForm Controller",
+            "itemtype": "method",
+            "name": "PlayerFormController",
+            "params": [
+                {
+                    "name": "$location",
+                    "description": "",
+                    "type": "Object"
+                },
+                {
+                    "name": "playerService",
+                    "description": "",
+                    "type": "Object"
+                },
+                {
+                    "name": "$scope",
+                    "description": "",
+                    "type": "Object"
+                }
+            ],
+            "class": "player.shPlayerForm",
+            "module": "app.layout",
+            "namespace": "player"
+        },
+        {
+            "file": "src/app/player/player.directive.js",
+            "line": 46,
+            "description": "ViewModel Alias",
+            "itemtype": "property",
+            "name": "vm",
+            "type": "Object",
+            "class": "player.shPlayerForm",
+            "module": "app.layout",
+            "namespace": "player"
+        },
+        {
+            "file": "src/app/player/player.directive.js",
+            "line": 53,
+            "description": "newPlayer playerService.Player() Object",
+            "itemtype": "property",
+            "name": "newPlayer",
+            "type": "Object",
+            "class": "player.shPlayerForm",
+            "module": "app.layout",
+            "namespace": "player"
+        },
+        {
+            "file": "src/app/player/player.directive.js",
+            "line": 64,
+            "description": "If the player exists on the backend, we'll want to get the data\nand put it into the newPlayer data model so that it populates the\nview's form fields.",
+            "class": "player.shPlayerForm",
+            "module": "app.layout",
+            "namespace": "player"
+        },
+        {
+            "file": "src/app/player/player.directive.js",
+            "line": 72,
+            "description": "function playerExists definition",
+            "itemtype": "method",
+            "name": "playerExists",
+            "class": "player.shPlayerForm",
+            "module": "app.layout",
+            "namespace": "player"
+        },
+        {
+            "file": "src/app/player/player.directive.js",
+            "line": 90,
+            "description": "function createPlayer definition\n  publishes the newPlayer form fields to the backend\n  then moves to the next step in the workflow",
+            "itemtype": "method",
+            "name": "createPlayer",
+            "class": "player.shPlayerForm",
+            "module": "app.layout",
+            "namespace": "player"
+        },
+        {
+            "file": "src/app/player/playerAvi.directive.js",
+            "line": 37,
+            "description": "PlayerAviFormController Controller",
+            "itemtype": "method",
+            "name": "PlayerAviFormController",
+            "params": [
+                {
+                    "name": "$location",
+                    "description": "",
+                    "type": "Object"
+                },
+                {
+                    "name": "playerService",
+                    "description": "",
+                    "type": "Object"
+                },
+                {
+                    "name": "$scope",
+                    "description": "",
+                    "type": "Object"
+                },
+                {
+                    "name": "AVATAR_COUNT",
+                    "description": "",
+                    "type": "Object"
+                },
+                {
+                    "name": "AVATAR_PREFIX",
+                    "description": "",
+                    "type": "Object"
+                }
+            ],
+            "class": "player.shPlayerAviForm",
+            "module": "app.player",
+            "namespace": "player"
+        },
+        {
+            "file": "src/app/player/playerAvi.directive.js",
+            "line": 48,
+            "description": "ViewModel Alias",
+            "itemtype": "property",
+            "name": "vm",
+            "type": "Object",
+            "class": "player.shPlayerAviForm",
+            "module": "app.player",
+            "namespace": "player"
+        },
+        {
+            "file": "src/app/player/playerAvi.directive.js",
+            "line": 58,
+            "description": "newPlayer playerService.Player() Object",
+            "itemtype": "property",
+            "name": "newPlayer",
+            "type": "Object",
+            "class": "player.shPlayerAviForm",
+            "module": "app.player",
+            "namespace": "player"
+        },
+        {
+            "file": "src/app/player/playerAvi.directive.js",
+            "line": 65,
+            "description": "avatars array of avatar SVG IDs",
+            "itemtype": "property",
+            "name": "avatars",
+            "type": "array",
+            "class": "player.shPlayerAviForm",
+            "module": "app.player",
+            "namespace": "player"
+        },
+        {
+            "file": "src/app/player/playerAvi.directive.js",
+            "line": 77,
+            "description": "Function createAvatars",
+            "itemtype": "method",
+            "name": "createAvatars",
+            "params": [
+                {
+                    "name": "avatars",
+                    "description": "",
+                    "type": "Array"
+                }
+            ],
+            "return": {
+                "description": "avatars array, filled in and shuffled",
+                "type": "Array"
+            },
+            "class": "player.shPlayerAviForm",
+            "module": "app.player",
+            "namespace": "player"
+        },
+        {
+            "file": "src/app/player/playerAvi.directive.js",
+            "line": 92,
+            "description": "Function shuffle - utility function to shuffle elements of an array",
+            "itemtype": "method",
+            "name": "shuffle",
+            "params": [
+                {
+                    "name": "array",
+                    "description": "",
+                    "type": "Array"
+                }
+            ],
+            "return": {
+                "description": "array",
+                "type": "Array"
+            },
+            "class": "player.shPlayerAviForm",
+            "module": "app.player",
+            "namespace": "player"
+        },
+        {
+            "file": "src/app/player/playerAvi.directive.js",
+            "line": 117,
+            "description": "Function selectAvatar",
+            "itemtype": "method",
+            "name": "selectAvatar",
+            "params": [
+                {
+                    "name": "selected",
+                    "description": "",
+                    "type": "Object"
+                }
+            ],
+            "class": "player.shPlayerAviForm",
+            "module": "app.player",
+            "namespace": "player"
+        },
+        {
+            "file": "src/app/player/playerAvi.directive.js",
+            "line": 127,
+            "description": "Function playerExists\n         If the player exists in the backend, retrieve a snapshot of the player data\n         and have it copied into the vm.Player data structure, which is bound to the view",
+            "itemtype": "method",
+            "name": "playerExists",
+            "class": "player.shPlayerAviForm",
+            "module": "app.player",
+            "namespace": "player"
+        },
+        {
+            "file": "src/app/player/playerAvi.directive.js",
+            "line": 146,
+            "description": "function createPlayerAvatar\n  At this point, a player can be assumed to be registered and the avatar setup\n  so before navigating to the next screen, let's set a 'registered' property on\n  the player record",
+            "itemtype": "method",
+            "name": "createPlayerAvatar",
+            "class": "player.shPlayerAviForm",
+            "module": "app.player",
+            "namespace": "player"
+        },
+        {
+            "file": "src/app/app.module.js",
+            "line": 56,
+            "description": "Main App Module Configuration function - pre-operational configuration setup",
+            "itemtype": "method",
+            "name": "configFunction",
+            "params": [
+                {
+                    "name": "$routeProvider",
+                    "description": "https://docs.angularjs.org/api/ngRoute/provider/$routeProvider",
+                    "type": "Object"
+                },
+                {
+                    "name": "$mdIconProvider",
+                    "description": "https://docs.angularjs.org/api/ng/provider/$logProvider",
+                    "type": "Object"
+                },
+                {
+                    "name": "$logProvider",
+                    "description": "https://material.angularjs.org/latest/api/service/$mdIconProvider",
+                    "type": "Object"
+                },
+                {
+                    "name": "$mdThemingProvider",
+                    "description": "https://material.angularjs.org/latest/api/service/$mdThemingProvider",
+                    "type": "Object"
+                }
+            ],
+            "class": "",
+            "module": "app"
+        },
+        {
+            "file": "src/app/app.module.js",
+            "line": 84,
+            "description": "Main App Module Run function - post-operational configuration\nConfigures:\n  Here we setup a listener for the routeChangeError event, if the error is\n  AUTH_REQUIRED we take the $location back to the root view.",
+            "itemtype": "method",
+            "name": "runFunction",
+            "params": [
+                {
+                    "name": "$rootScope",
+                    "description": "",
+                    "type": "Object"
+                },
+                {
+                    "name": "$location",
+                    "description": "",
+                    "type": "Object"
+                }
+            ],
+            "class": "",
+            "module": "app"
+        }
+    ],
+    "warnings": [
+        {
+            "message": "Missing item type\nUtility function for retreiving the text value of an array of DOM nodes",
+            "line": " meta/Firebase-json-Schema/js/jquery.js:4182"
+        },
+        {
+            "message": "Missing item type\nUtility function for retreiving the text value of an array of DOM nodes",
+            "line": " meta/Firebase-json-Schema/web/js/jquery.js:4182"
+        },
+        {
+            "message": "Missing item type\nConfiguration information is defined as Constants in app/core/constants.js\nThis javascript is defined and executed as part of the bootstrap process.\nIt initializes the Firebase system.",
+            "line": " src/app/core/config.firebase.js:1"
+        },
+        {
+            "message": "Missing item type\nOn logout, all Firebase references need to be closed",
+            "line": " src/app/core/player.service.js:54"
+        },
+        {
+            "message": "Missing item type\nJoin module Configuration Function\nAngular Type: Configuration",
+            "line": " src/app/game/config.route.js:1"
+        },
+        {
+            "message": "Missing item type\nJoin module definition\nAngular Type: Module",
+            "line": " src/app/game/join.controller.js:1"
+        },
+        {
+            "message": "Missing item type\nJoin module definition\nAngular Type: Module",
+            "line": " src/app/game/join.module.js:1"
+        },
+        {
+            "message": "Missing item type\nIf the player exists on the backend, we'll want to get the data\nand put it into the newPlayer data model so that it populates the\nview's form fields.",
+            "line": " src/app/player/player.directive.js:64"
+        }
+    ]
+}

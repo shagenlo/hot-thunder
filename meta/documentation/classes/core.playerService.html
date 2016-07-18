@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>core.playerService - Hot Thunder Game</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="icon" href="../assets/favicon.ico">
+    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+                <h1><img src="../assets/css/logo.png" title="Hot Thunder Game" width="117" height="52"></h1>
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em>API Docs for: 0.0.0</em>
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+                    <h2 class="off-left">APIs</h2>
+                    <div id="api-tabview" class="tabview">
+                        <ul class="tabs">
+                            <li><a href="#api-classes">Classes</a></li>
+                            <li><a href="#api-modules">Modules</a></li>
+                        </ul>
+                
+                        <div id="api-tabview-filter">
+                            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+                        </div>
+                
+                        <div id="api-tabview-panel">
+                            <ul id="api-classes" class="apis classes">
+                                <li><a href="../classes/auth.authController.html">auth.authController</a></li>
+                                <li><a href="../classes/auth.authService.html">auth.authService</a></li>
+                                <li><a href="../classes/auth.configFunction.html">auth.configFunction</a></li>
+                                <li><a href="../classes/auth.shAuthForm.html">auth.shAuthForm</a></li>
+                                <li><a href="../classes/core.firebaseDataService.html">core.firebaseDataService</a></li>
+                                <li><a href="../classes/core.playerService.html">core.playerService</a></li>
+                                <li><a href="../classes/landing.configFunction.html">landing.configFunction</a></li>
+                                <li><a href="../classes/layout.shNavbar.html">layout.shNavbar</a></li>
+                                <li><a href="../classes/player.configFunction.html">player.configFunction</a></li>
+                                <li><a href="../classes/player.PlayerController.html">player.PlayerController</a></li>
+                                <li><a href="../classes/player.shPlayerAviForm.html">player.shPlayerAviForm</a></li>
+                                <li><a href="../classes/player.shPlayerForm.html">player.shPlayerForm</a></li>
+                            </ul>
+                
+                
+                            <ul id="api-modules" class="apis modules">
+                                <li><a href="../modules/app.html">app</a></li>
+                                <li><a href="../modules/app.auth.html">app.auth</a></li>
+                                <li><a href="../modules/app.core.html">app.core</a></li>
+                                <li><a href="../modules/app.core.constant.html">app.core.constant</a></li>
+                                <li><a href="../modules/app.landing.html">app.landing</a></li>
+                                <li><a href="../modules/app.layout.html">app.layout</a></li>
+                                <li><a href="../modules/app.player.html">app.player</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+                    Show:
+                    <label for="api-show-inherited">
+                        <input type="checkbox" id="api-show-inherited" checked>
+                        Inherited
+                    </label>
+            
+                    <label for="api-show-protected">
+                        <input type="checkbox" id="api-show-protected">
+                        Protected
+                    </label>
+            
+                    <label for="api-show-private">
+                        <input type="checkbox" id="api-show-private">
+                        Private
+                    </label>
+                    <label for="api-show-deprecated">
+                        <input type="checkbox" id="api-show-deprecated">
+                        Deprecated
+                    </label>
+            
+                </div>
+            
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+<h1>core.playerService Class</h1>
+<div class="box meta">
+
+
+        <div class="foundat">
+            Defined in: <a href="../files/src_app_core_player.service.js.html#l1"><code>src&#x2F;app&#x2F;core&#x2F;player.service.js:1</code></a>
+        </div>
+
+            Module: <a href="../modules/app.core.html">app.core</a>
+
+</div>
+
+
+<div class="box intro">
+    <p>Application Player Service</p>
+<p>Angular Type: Factory</p>
+<p>Service provider for the Player functionality of the application</p>
+
+</div>
+
+    <div class="constructor">
+        <h2>Constructor</h2>
+<div id="method_core.playerService" class="method item">
+    <h3 class="name"><code>core.playerService</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>$rootScope</code>
+                </li>
+                <li class="arg">
+                        <code>$firebaseArray</code>
+                </li>
+                <li class="arg">
+                        <code>firebaseDataService</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type">Object</span>
+        </span>
+
+
+
+
+        <span class="flag static">static</span>
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/src_app_core_player.service.js.html#l1"><code>src&#x2F;app&#x2F;core&#x2F;player.service.js:1</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">$rootScope</code>
+                        <span class="type">Object</span>
+
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">$firebaseArray</code>
+                        <span class="type">Object</span>
+
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">firebaseDataService</code>
+                        <span class="type">Object</span>
+
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">Object</span>:
+                    <p>service definition object</p>
+
+            </div>
+        </div>
+
+
+</div>
+    </div>
+
+<div id="classdocs" class="tabview">
+    <ul class="api-class-tabs">
+        <li class="api-class-tab index"><a href="#index">Index</a></li>
+
+            <li class="api-class-tab methods"><a href="#methods">Methods</a></li>
+            <li class="api-class-tab properties"><a href="#properties">Properties</a></li>
+    </ul>
+
+    <div>
+        <div id="index" class="api-class-tabpanel index">
+            <h2 class="off-left">Item Index</h2>
+
+                <div class="index-section methods">
+                    <h3>Methods</h3>
+
+                    <ul class="index-list methods">
+                            <li class="index-item method">
+                                <a href="#method_copySnapshotToPlayer">copySnapshotToPlayer</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_getPlayer">getPlayer</a>
+
+                            </li>
+                            <li class="index-item method private">
+                                <a href="#method_getRegisteredStatus">getRegisteredStatus</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_getUid">getUid</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_getUsers">getUsers</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_Player">Player</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_updatePlayer">updatePlayer</a>
+
+                            </li>
+                    </ul>
+                </div>
+
+                <div class="index-section properties">
+                    <h3>Properties</h3>
+
+                    <ul class="index-list properties">
+                            <li class="index-item property deprecated">
+                                <a href="#property_fbPlayer">fbPlayer</a>
+
+                                    <span class="flag deprecated">deprecated</span>
+                            </li>
+                            <li class="index-item property deprecated">
+                                <a href="#property_fbUsers">fbUsers</a>
+
+                                    <span class="flag deprecated">deprecated</span>
+                            </li>
+                    </ul>
+                </div>
+
+
+        </div>
+
+            <div id="methods" class="api-class-tabpanel">
+                <h2 class="off-left">Methods</h2>
+
+<div id="method_copySnapshotToPlayer" class="method item">
+    <h3 class="name"><code>copySnapshotToPlayer</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>player</code>
+                </li>
+                <li class="arg">
+                        <code>snapshot</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"></span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/src_app_core_player.service.js.html#l146"><code>src&#x2F;app&#x2F;core&#x2F;player.service.js:146</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>copySnapshotToPlayer() Apply data in the firebase snapshot to a Player array</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">player</code>
+                        <span class="type">Object</span>
+
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">snapshot</code>
+                        <span class="type">Object</span>
+
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                    <p>Nothing.  This utility function copies contents of the snapshot into the player object.</p>
+
+            </div>
+        </div>
+
+
+</div>
+<div id="method_getPlayer" class="method item">
+    <h3 class="name"><code>getPlayer</code></h3>
+
+        <span class="paren">()</span>
+
+        <span class="returns-inline">
+            <span class="type">Object</span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/src_app_core_player.service.js.html#l124"><code>src&#x2F;app&#x2F;core&#x2F;player.service.js:124</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>getPlayer() Check if the player already exists, In which case we'll take a snapshot into the player model</p>
+
+    </div>
+
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">Object</span>:
+                    <p>promise</p>
+
+            </div>
+        </div>
+
+
+</div>
+<div id="method_getRegisteredStatus" class="method item private">
+    <h3 class="name"><code>getRegisteredStatus</code></h3>
+
+        <span class="paren">()</span>
+
+        <span class="returns-inline">
+            <span class="type">Object</span>
+        </span>
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/src_app_core_player.service.js.html#l112"><code>src&#x2F;app&#x2F;core&#x2F;player.service.js:112</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>getRegisteredStatus() Get the registered status of the currently logged-in user</p>
+
+    </div>
+
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">Object</span>:
+                    <p>promise, resolves to a boolean or null</p>
+
+            </div>
+        </div>
+
+
+</div>
+<div id="method_getUid" class="method item">
+    <h3 class="name"><code>getUid</code></h3>
+
+        <span class="paren">()</span>
+
+        <span class="returns-inline">
+            <span class="type">String</span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/src_app_core_player.service.js.html#l102"><code>src&#x2F;app&#x2F;core&#x2F;player.service.js:102</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>getUid() Get the UID of the currently logged in user</p>
+
+    </div>
+
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">String</span>:
+                    <p>UID of current user</p>
+
+            </div>
+        </div>
+
+
+</div>
+<div id="method_getUsers" class="method item">
+    <h3 class="name"><code>getUsers</code></h3>
+
+        <span class="paren">()</span>
+
+        <span class="returns-inline">
+            <span class="type">Object</span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/src_app_core_player.service.js.html#l89"><code>src&#x2F;app&#x2F;core&#x2F;player.service.js:89</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>getUsers() Get the firebase:/users AngularFire Array</p>
+
+    </div>
+
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">Object</span>:
+                    <p>fbUsers - an AngularFire array</p>
+
+            </div>
+        </div>
+
+
+</div>
+<div id="method_Player" class="method item">
+    <h3 class="name"><code>Player</code></h3>
+
+        <span class="paren">()</span>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/src_app_core_player.service.js.html#l72"><code>src&#x2F;app&#x2F;core&#x2F;player.service.js:72</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Player function.  Data model template for view and firebase</p>
+
+    </div>
+
+
+
+
+</div>
+<div id="method_updatePlayer" class="method item">
+    <h3 class="name"><code>updatePlayer</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>player</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type">Object</span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/src_app_core_player.service.js.html#l134"><code>src&#x2F;app&#x2F;core&#x2F;player.service.js:134</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>updatePlayer() Create Player in database</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">player</code>
+                        <span class="type">Object</span>
+
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">Object</span>:
+                    <p>promise</p>
+
+            </div>
+        </div>
+
+
+</div>
+            </div>
+
+            <div id="properties" class="api-class-tabpanel">
+                <h2 class="off-left">Properties</h2>
+
+<div id="property_fbPlayer" class="property item deprecated">
+    <h3 class="name"><code>fbPlayer</code></h3>
+    <span class="type">Object AngularFire database reference to @root/Users/uid/</span>
+
+        <span class="flag deprecated">deprecated</span>
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/src_app_core_player.service.js.html#l34"><code>src&#x2F;app&#x2F;core&#x2F;player.service.js:34</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>Description for fbPlayer</p>
+
+    </div>
+
+
+
+</div>
+<div id="property_fbUsers" class="property item deprecated">
+    <h3 class="name"><code>fbUsers</code></h3>
+    <span class="type">Object AngularFire database reference to @root/Users</span>
+
+        <span class="flag deprecated">deprecated</span>
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/src_app_core_player.service.js.html#l26"><code>src&#x2F;app&#x2F;core&#x2F;player.service.js:26</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>Description for fbUsers</p>
+
+    </div>
+
+
+
+</div>
+            </div>
+
+
+    </div>
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>

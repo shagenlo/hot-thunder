@@ -1,0 +1,10 @@
+{
+    "name": "Hot Thunder Game",
+    "description": "Hot Thunder: A multiplayer, educational game platform",
+    "version": "0.0.0",
+    "url": "https://totalwine-7d7d5.firebaseio.com/",
+    "options": {
+        "outdir": "./meta/documentation",
+        "ignorePaths": [ "meta" ]
+    }
+}

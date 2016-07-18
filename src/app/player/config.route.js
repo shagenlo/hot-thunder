@@ -1,3 +1,13 @@
+/**
+* Configuration definitions for player module (player.module.js)
+*
+* Sets up routes and controller bindings for player data entry views
+*
+* Angular Type: Configuration
+* @namespace player
+* @class configFunction
+* @constructor
+*/
 (function () {
     'use strict';
     
@@ -23,8 +33,15 @@
         });
     }
 
-    resolveUser.$inject = ['authService'];
+    
 
+    /**
+    * resolveUser function
+    * @method resolveUser
+    * @param {Object} authService
+    * @return {Object} promise
+    */
+    resolveUser.$inject = ['authService'];
     function resolveUser(authService) {
         return authService.firebaseAuthObject.$requireSignIn();
     }

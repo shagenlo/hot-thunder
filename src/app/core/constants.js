@@ -1,3 +1,29 @@
+/**
+* Constants Definitions - this is not actually a module, just naming it so the documentation generator can catch it.
+*
+*  'FIREBASE_URL','https://totalwine-7d7d5.firebaseio.com/'
+*
+*  'API_KEY','AIzaSyBXjwIZIm-KpJKRhBoqjlIW0mH5Bo2VAV0'
+*
+*  'AUTH_DOMAIN','totalwine-7d7d5.firebaseapp.com'
+*
+*  'DATABASE_URL','https://totalwine-7d7d5.firebaseio.com'
+*
+*  'STORAGE_BUCKET',''
+*
+*  'PROTECTED_PATHS', ['/player', '/playerAvi', '/join']
+*
+*  'FIREBASE_LOGGING',false
+*
+*  'AVATAR_COUNT',32
+*
+*  'AVATAR_PREFIX','svg-'
+*
+* Angular Type: Constants
+* @namespace core
+* @module app.core.constant
+*/
+
 (function(){
     'use strict';
     

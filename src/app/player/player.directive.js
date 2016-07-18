@@ -1,3 +1,13 @@
+/**
+* shPlayerForm Directive
+*
+* Angular Type: Directive
+* @namespace player
+* @class shPlayerForm
+* @constructor
+* @return {Object} shPlayerForm directive instance
+* View: app/player/playerForm.html
+*/
 (function () {
     'use strict';
     
@@ -22,24 +32,47 @@
         };
     }
  
-    PlayerFormController.$inject = ['$location', 'playerService', '$scope', '$timeout'];
     
-    function PlayerFormController($location, playerService, $scope, $timeout) {
+    
+    /**
+    * shPlayerForm Controller
+    * @method PlayerFormController
+    * @param {Object} $location
+    * @param {Object} playerService
+    * @param {Object} $scope
+    */
+    PlayerFormController.$inject = ['$location', 'playerService', '$scope'];
+    function PlayerFormController($location, playerService, $scope) {
+        /**
+        * ViewModel Alias
+        * @property vm
+        * @type Object
+        */
         var vm = this;
+        
+        /**
+        * newPlayer playerService.Player() Object
+        * @property newPlayer
+        * @type Object
+        */
+        vm.newPlayer = new playerService.Player();
+        
         vm.createPlayer = createPlayer;
         vm.playerExists = playerExists;
-        
-        vm.newPlayer = new playerService.Player();
        
-        
-        //If the player exists on the backend, we'll want to get the data
-        //  and put it into the newPlayer data model so that it populates the
-        //  view's form fields.
-        
+
+        /**
+        * If the player exists on the backend, we'll want to get the data
+        * and put it into the newPlayer data model so that it populates the
+        * view's form fields.
+        */
         playerExists();
-        //$timeout(function () {playerExists()}, 100); //Use this to delay lookup
         
         
+        /**
+        * function playerExists definition
+        * @method playerExists
+        */
         function playerExists() {
             playerService.getPlayer()
             .then(function (snapshot) {
@@ -53,8 +86,13 @@
             });
         }
         
-        //Submit function - publishes the newPlayer form fields to the backend
-        //  then moves to the next step in the workflow
+        
+        /**
+        * function createPlayer definition
+        *   publishes the newPlayer form fields to the backend
+        *   then moves to the next step in the workflow
+        * @method createPlayer
+        */
         function createPlayer() {
             playerService.updatePlayer(vm.newPlayer)
             .then(function(p) {
